@@ -1,0 +1,1849 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width initial-scale-1.0">
+<title>РТРС</title>
+<link rel="stylesheet" href="libs\font-awesome-4.7.0\css\font-awesome.min.css">
+<link rel="stylesheet" href="css\slick.css">
+<link rel="stylesheet" href="css\slick-theme.css">
+<link rel="stylesheet" href="css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="css/jquery.fullpage.css">
+<link rel="stylesheet" href="css\reset.css">
+<link rel="stylesheet" href="css\animate.css">
+<link rel="stylesheet" href="css\fakeLoader.css">
+<link rel="stylesheet" href="css\style.css?4.10.2017_14:12">
+<link rel="stylesheet" href="css\media.css?4.10.2017_14:12">
+</head>
+<body class="body__lock-w">
+   <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+            (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+            try {
+            w.yaCounter45993612 = new Ya.Metrika({
+            id:45993612,
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+            });
+            } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+            })(document, window, "yandex_metrika_callbacks");
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/45993612" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+
+<!--    <div id="fakeLoader"></div>-->
+    <div id="preloader"></div>
+    <div id="wrapper">
+<!--        <a class="scroll__top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>-->
+        <header>
+            <a href="#" class="logo logo__main">
+                <picture>
+                    <source srcset="img/header-logo-mob.png" media="(max-width: 468px)">
+                    <img src="img\header-logo.png" alt=""></source></picture>
+            </a>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item header__nav-item-start"><a href="#">В начало</a></li>
+                    <li class="header__nav-item"><a href="#channel">Каналы</a></li>
+                    <li class="header__nav-item"><a href="#how">Как это работает?</a></li>
+                    <li class="header__nav-item"><a href="#equipment">Оборудование</a></li>
+                    <li class="header__nav-item"><a href="#question">Часто задаваемые вопросы</a></li>
+                </ul>
+            </nav>
+            <a class="header__mobile-call" data-fancybox="" data-src="#header__modal-wrap" href="javascript://">Заказать звонок</a>
+            <ul class="header__callback">
+               <li class="header__callback-item">
+                    <span class="header__item-tel">+7 (3952) <span>40-46-36</span></span>
+               </li>
+                <li class="header__callback-item">
+                    <a class="header__item-btn" href="#" data-fancybox="" data-src="#header__modal-wrap" href="javascript://"><i class="fa fa-phone" aria-hidden="true"></i> Заказать звонок</a>
+                </li>
+            </ul>
+            <a class="header__call-btn" href="tel:+7 (3952) 40-46-36"><i class="fa fa-phone" aria-hidden="true"></i>  +7 (3952) <span>40-46-36</span></a>
+        </header>
+        <div class="top__banner">
+           <div class="top__banner-overlay"></div>
+            <div class="top__banner-text">
+                <h1>Бесплатное цифровое эфирное телевидение</h1>
+                <p сlass="container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis fugiat, accusamus voluptatibus voluptatem ut architecto</p>
+                <div class="top__banner-wrap-btn">
+                    <a href="#advantage" class="top__banner-btn-more">Узнать подробнее</a>
+                    <a href="#equipment" class="top__banner-btn-equipment">Подобрать оборудование</a>
+                </div>
+            </div>
+            <a class="top__banner-btn" href="#advantage"><span></span></a>
+        </div>
+        <section class="advantage" id="advantage">
+            <a href="#preimushchestva_besplatnogo_efirnogo_televideniya" class="link__m"></a>
+            <div class="advantage__slide1">
+                <div class="section__title">
+                <h2>Преимущества цифрового эфирного телевидения</h2>
+                <div class="section__title-block">
+                    <span class="section__title-block-line section__title-block-linetl"></span>
+                    <span class="section__title-block-line section__title-block-linebl"></span>
+                    <span class="section__title-block-icon"></span>
+                    <span class="section__title-block-line section__title-block-linetr"></span>
+                    <span class="section__title-block-line section__title-block-linebr"></span>
+                </div>
+                <a href="kak_vybrat_tv_pristavky.html"  class="advantage__slide-link link">Читать подробнее <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+            </div>
+            <div class="advantage__content">
+                <ul class="advantage__list container">
+                    <li class="advantage__item">
+                        <span class="advantage__item-img">
+                            <img src="img\calendar.png" alt="">
+                        </span>
+                        <div class="advantage__item-content">
+                            <h3>Без абонентской платы</h3>
+                        </div>
+                    </li>
+                    <li class="advantage__item">
+                        <span class="advantage__item-img">
+                            <img src="img\HD.svg" alt="">
+                        </span>
+                        <div class="advantage__item-content">
+                            <h3>Отличное изображение и звук</h3>
+                        </div>
+                    </li>
+                    <li class="advantage__item">
+                        <span class="advantage__item-img">
+                            <img src="img\benefit.svg" alt="">
+                        </span>
+                        <div class="advantage__item-content">
+                            <h3>Выгодная цена</h3>
+                        </div>
+                    </li>
+                    <li class="advantage__item">
+                        <span class="advantage__item-img">
+                            <img src="img\media.svg" alt="">
+                        </span>
+                        <div class="advantage__item-content">
+                            <h3>Медиаплеер</h3>
+                        </div>
+                    </li>
+                    <li class="advantage__item">
+                        <span class="advantage__item-img">
+                            <img src="img\free.png" alt="">
+                        </span>
+                        <div class="advantage__item-content">
+                            <h3>20 бесплатных телеканалов</h3>
+                        </div>
+                    </li>
+                    <li class="advantage__item">
+                        <span class="advantage__item-img">
+                            <img src="img\free__antenna.svg" alt="">
+                        </span>
+                        <div class="advantage__item-content">
+                            <h3>3 бесплатных радиоканала</h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
+<!--
+            <div class="advantage__slide2">
+                <div class="advantage__slide-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque tenetur odio deserunt neque sequi adipisci aperiam. Totam beatae esse porro consequatur rem, sit impedit nesciunt doloribus est eius praesentium minus delectus vitae quos voluptas eos molestias quo quibusdam deleniti harum aut. Similique tenetur iusto reprehenderit, sint iure sapiente quis consequatur?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis rem eaque reprehenderit a praesentium, dolorum, tempora sequi molestiae. Incidunt minima corrupti quos reiciendis ipsum quasi labore rerum, similique expedita eligendi?Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <a href="#preimushchestva_besplatnogo_efirnogo_televideniya" class="advantage__slide-close"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Закрыть</a>
+            </div>
+-->
+        </section>
+        <section class="channel" id="channel">
+            <a href="#kanaly" class="link__m"></a>
+            <div class="channel__slide1">
+                <div class="section__title">
+                    <h2>Бесплатные каналы цифрового эфирного телевидения</h2>
+                    <div class="section__title-block">
+                        <span class="section__title-block-line section__title-block-linetl"></span>
+                        <span class="section__title-block-line section__title-block-linebl"></span>
+                        <span class="section__title-block-icon"></span>
+                        <span class="section__title-block-line section__title-block-linetr"></span>
+                        <span class="section__title-block-line section__title-block-linebr"></span>
+                    </div>
+                    <a href="besplatnyye_kanaly_tsifrovogo_televideniya.html" target="_blank" class="channel__slide-link link">Читать подробнее <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                </div>
+                <div class="channel__content container">
+                    <div class="channel__block">
+                        <ul class="channel__list">
+                            <li class="channel__row-item"><img src="img\channel\1tv.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\RenTV.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\sts.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\ntv.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\muzTV.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\TNT.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\5tv.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\spas.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\tvcenter.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\tv3.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\mir24.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\otr.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\Russia1.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\RussiaK.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\russia24.jpg" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\carousel.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\friday.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\Domashny.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\Zvezda.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\Radiorus.gif" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\vestiFm.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\radioRec.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <!---<div class="channel__row">
+                        <ul class="channel__row-list">
+                            <li class="channel__row-item"><img src="img\channel\sts.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\Russia1.png" alt=""></li>
+                            <li class="channel__row-item"><img class="channel__muz" src="img\channel\muzTV.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\1tv.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\RenTV.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\Domashny.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\ntv.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\5tv.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\RussiaK.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\russia24.jpg" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\TNT.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\Zvezda.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\spas.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\carousel.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\matchTV.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\tvcenter.png" alt=""></li>
+                            <li class="channel__row-item"><img src="img\channel\otr.png" alt=""></li>
+                            <li class="channel__row-item"><img class="channel__row-imgr" src="img\channel\tv3.png" alt=""></li>
+                            <li class="channel__row-itemw"><img src="img\channel\mir24.png" alt=""></li>
+                            <li class="channel__row-item"><img class="channel__row-img-fr" src="img\channel\friday.png" alt=""></li>
+                            <li class="channel__row-item"><img class="channel__row-item-l" src="img\channel\Radiorus.gif" alt=""></li>
+                            <li class="channel__row-item"><img class="channel__row-item-vfm" src="img\channel\vestiFm.png" alt=""></li>
+                            <li class="channel__row-item"><img class="channel__row-item-r" src="img\channel\radioRec.jpg" alt=""></li>
+                        </ul>
+                    </div> --->
+                </div>
+            </div>
+<!--
+            <div class="channel__slide2">
+                <div class="channel__slide-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque tenetur odio deserunt neque sequi adipisci aperiam. Totam beatae esse porro consequatur rem, sit impedit nesciunt doloribus est eius praesentium minus delectus vitae quos voluptas eos molestias quo quibusdam deleniti harum aut. Similique tenetur iusto reprehenderit, sint iure sapiente quis consequatur?</p>
+                </div>
+                <a href="#kanaly" class="channel__slide-close link"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Закрыть</a>
+            </div>
+-->
+        </section>
+        <section class="how" id="how">
+            <a href="#kak_eto_rabotaet" class="link__m"></a>
+           <div class="how__slide1">
+                <div class="section__title">
+                    <h2 class="section__title-white">Как это работает ?</h2>
+                    <a href="kak_vybrat_antennu_so_stabilnim_signalom.html" target="_blank" class="how__slide-link link">Читать подробнее <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                </div>
+                <div class="how__block">
+                    <div class="how__block-new">
+                        <h3>Если у вас телевизор нового поколения</h3>
+                        <span class="how__block-new-icon1"><img src="img\antenna.svg" alt=""></span>
+                        <span class="how__block-new-icon2"><img src="img\monitor.svg" alt=""></span>
+                        <span class="how__block-new-line"></span>
+                        <span class="how__block-new-left">Антенна дециметрового <br>диапазона волн</span>
+                        <span class="how__block-new-right">Телевизиор со встроенным <br>ресивером DVB-T2</span>
+                        <span class="how__block-new-center">Телевизионный высокочастотный (антенный) кабель</span>
+                    </div>
+                    <div class="section__title-block">
+                        <span class="section__title-block-line-white section__title-block-linetl"></span>
+                        <span class="section__title-block-line-white  section__title-block-linebl"></span>
+                        <span class="section__title-block-icon-white"></span>
+                        <span class="section__title-block-line-white  section__title-block-linetr"></span>
+                        <span class="section__title-block-line-white  section__title-block-linebr"></span>
+                    </div>
+                    <div class="how__block-old">
+                        <h3>Если у вас аналоговый телевизор</h3>
+                        <span class="how__block-old-icon1"><img src="img\antenna.svg" alt=""></span>
+                        <span class="how__block-old-icon2"><img src="img\television.svg" alt=""></span>
+                        <span class="how__block-old-icon3"><img src="img\kinect-with-light.svg" alt=""></span>
+                        <span class="how__block-old-line1"></span>
+                        <span class="how__block-old-line2"></span>
+                        <span class="how__block-old-left">Антенна дециметрового <br>диапазона волн</span>
+                        <span class="how__block-old-right">Аналоговый телевизор</span>
+                        <span class="how__block-old-text1">Телевизионный высокочастотный <br>(антенный) кабель</span>
+                        <span class="how__block-old-text2">Телевизионный низкочастотный<br> кабель(подключается <br>к видеовходу телевизора)</span>
+                        <span class="how__block-old-text3">Цифровая телевизионная <br>приставка DVB-T2</span>
+                    </div>
+                </div>
+           </div>
+<!--
+           <div class="how__slide2">
+                <div class="how__slide-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque tenetur odio deserunt neque sequi adipisci aperiam. Totam beatae esse porro consequatur rem, sit impedit nesciunt doloribus est eius praesentium minus delectus vitae quos voluptas eos molestias quo quibusdam deleniti harum aut. Similique tenetur iusto reprehenderit, sint iure sapiente quis consequatur?</p>
+                </div>
+                <a href="#kak_eto_rabotaet" class="how__slide-close link"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Закрыть</a>
+           </div>
+-->
+        </section>
+        <section class="equipment" id="equipment">
+           <a href="#oborudovaniye" class="link__m"></a>
+            <div class="equipment__cart">
+                <div id="open">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <div class="label-place"></div>
+                 </div>
+            </div>
+             <div class="section__title">
+                <h2>Оборудование для бесплатного телевидения</h2>
+                <div class="section__title-block">
+                    <span class="section__title-block-line section__title-block-linetl"></span>
+                    <span class="section__title-block-line section__title-block-linebl"></span>
+                    <span class="section__title-block-icon"></span>
+                    <span class="section__title-block-line section__title-block-linetr"></span>
+                    <span class="section__title-block-line section__title-block-linebr"></span>
+                </div>
+            </div>
+            <div class="equipment__content">
+    <!-------- Filter desktop console ------------------------------->
+                <div class="equipment__console">
+                    <div class="container">
+                        <div class="equipment__console-slider">
+                        <h4>Чувствительность приставки</h4>
+                        <ul class="equipment__console-slider-list">
+                            <li class="equipment__console-slider-item filter" type="button" data-filter="all">Все</li>
+                            <li class="equipment__console-slider-item filter" type="button" data-filter=".middle">Средняя</li>
+                            <li class="equipment__console-slider-item filter" type="button" data-filter=".good">Хорошая</li>
+                            <li class="equipment__console-slider-item filter" type="button" data-filter=".excellent">Отличная</li>
+                        </ul>
+                        <ul class="equipment__console-slider-line-list">
+                            <li class="equipment__console-slider-line equipment__console-slider-line1"></li>
+                            <li class="equipment__console-slider-line equipment__console-slider-line2"></li>
+                            <li class="equipment__console-slider-line equipment__console-slider-line3"></li>
+                            <li class="equipment__console-slider-line equipment__console-slider-line4"></li>
+                        </ul>
+                       <input type="range" min="1" max="4" step="1" value="1" class="equipment__console-roller">
+                    </div>
+                    <div class="equipment__console-btn">
+                        <button class="equipment__console-btn-all filter" type="button" data-filter="all">Все</button>
+                        <button class="equipment__console-btn-middle filter" type="button" data-filter=".middle">Средняя</button>
+                        <button class="equipment__console-btn-good filter" type="button" data-filter=".good">Хорошая</button>
+                        <button class="equipment__console-btn-excellent filter" type="button" data-filter=".excellent">Отличная</button>
+                    </div>
+                    <ul class="equipment__list-console container" id="container">
+                        <li class="equipment__item-console mix excellent" data-order="1">
+                            <div class="equipment__item-console-wrap">
+                                <!--<span class="equipment__item-console-discount">-17%</span>-->
+                                <a href="#" class="equipment__item-console-img">
+                                    <img src="img\equipment\Oriel-302-DVB-T2.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-console-title"><b>Oriel 302 DVB-T2</b></a>
+                                <ul class="equipment__item-console-character">
+                                    <li>Демодулятор  Sony. Самая Высокая чувствительность.</li>
+                                    <li>Пластиковый  корпус</li>
+                                    <li>Внешний б/п 12вольт</li>
+                                    <li>Просмотр фото и видео файлов</li>
+                                    <li>USB 2.0 с поддержкой записи</li>
+                               </ul>
+                                <div class="equipment__item-console-price">
+                                    <span class="equipment__item-console-price-actual">1890 руб.</span>
+                                    <!--<span class="equipment__item-console-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a data-fancybox="" data-src="#equipment__modal" href="javascript://" class="equipment__item-console-btn add-item add__i" data-id="1" data-title="Oriel 302 DVB-T2" data-price="1890 руб" data-img="img/equipment/Oriel-302-DVB-T2.jpg" data-count="100500">Добавить в корзину</a>
+                            </div>
+                        </li>
+                        <li class="equipment__item-console mix excellent" data-order="2">
+                           <div class="equipment__item-console-wrap">
+                               <!--<span class="equipment__item-console-discount">-17%</span>-->
+                                <a href="#" class="equipment__item-console-img">
+                                    <img src="img\equipment\2.png" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-console-title"><b>D-Color DC1501HD DVB-T2</b></a>
+                                <ul class="equipment__item-console-character">
+                                    <li>Высокая чувствительность</li>
+                                    <li>Металлический корпус</li>
+                                    <li>Дисплей на лицевой панели</li>
+                                    <li>Кнопки управления на лицевой панели</li>
+                                    <li>Цифровой звук DOLBY DIGITAL \ AC-3</li>
+                                </ul>
+                                <div class="equipment__item-console-price">
+                                    <span class="equipment__item-console-price-actual">2190 руб.</span>
+                                    <!--<span class="equipment__item-console-price-discount">4999 руб.</span>-->
+                                </div>
+                                <a data-fancybox="" data-src="#equipment__modal" href="javascript://" class="equipment__item-console-btn add-item" data-id="2" data-title="D-Color DC1501HD DVB-T2" data-price="2190 руб" data-img="img/equipment/2.png" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="equipment__item-console mix excellent" data-order="3">
+                           <div class="equipment__item-console-wrap">
+                               <!--<span class="equipment__item-console-new">New</span>-->
+                                <a href="#" class="equipment__item-console-img">
+                                    <img src="img\equipment\Oriel-314-plus-DVB-T2.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-console-title"><b>Oriel 314+ DVB-T2</b></a>
+                                <ul class="equipment__item-console-character">
+                                    <li>Высокая чувствительность</li>
+                                    <li>Металлический корпус</li>
+                                    <li>Дисплей на лицевой панели</li>
+                                    <li>Кнопки управления на лицевой панели</li>
+                                    <li>Просмотр фото и видео файлов</li>
+                                </ul>
+                                <div class="equipment__item-console-price">
+                                    <span class="equipment__item-console-price-actual">1790 руб.</span>
+                                    <!--<span class="equipment__item-console-price-discount">3999 руб.</span>-->
+                                </div>
+                                <a data-fancybox="" data-src="#equipment__modal" href="javascript://" class="equipment__item-console-btn add-item" data-id="3" data-title="Oriel 314+ DVB-T2" data-price="1790 руб." data-img="img/equipment/Oriel-314-plus-DVB-T2.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="equipment__item-console mix excellent" data-order="4">
+                            <div class="equipment__item-console-wrap">
+                                <!--<span class="equipment__item-console-discount">-17%</span>-->
+                                <a href="#" class="equipment__item-console-img">
+                                    <img src="img\equipment\Selenga-HD-930D.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-console-title"><b>Selenga HD 930D</b></a>
+                                <ul class="equipment__item-console-character">
+                                    <li>Высокая чувствительность</li>
+                                    <li>Металлический корпус</li>
+                                    <li>Дисплей на лицевой панели</li>
+                                    <li>Кнопки управления на лицевой панели</li>
+                                    <li>Цифровой звук DOLBY DIGITAL \ AC-3</li>
+                                </ul>
+                                <div class="equipment__item-console-price">
+                                    <span class="equipment__item-console-price-actual">1890 руб.</span>
+                                    <!--<span class="equipment__item-console-price-discount">6999 руб.</span>-->
+                                </div>
+                                <a data-fancybox="" data-src="#equipment__modal" href="javascript://" class="equipment__item-console-btn add-item" data-id="4" data-title="Selenga HD 930D" data-price="1890 руб." data-img="img/equipment/Selenga-HD-930D.jpg" data-count="100500">Добавить в корзину</a>
+                            </div>
+                        </li>
+                        <li class="equipment__item-console mix good" data-order="5">
+                           <div class="equipment__item-console-wrap">
+                               <!--<span class="equipment__item-console-discount">-17%</span>-->
+                                <a href="#" class="equipment__item-console-img">
+                                    <img src="img\equipment\Selenga-T71-DVB-T2.png" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-console-title"><b>Selenga T71 DVB-T2</b></a>
+                                <ul class="equipment__item-console-character">
+                                    <li>Чувствительность выше среднего</li>
+                                    <li>Кнопки управления на лицевой панели</li>
+                                    <li>Дисплей на лицевой панели</li>
+                                    <li>Dolby Digital AC-3  звук</li>
+                                    <li>Внешний б/п 12 вольт</li>
+                                </ul>
+                                <div class="equipment__item-console-price">
+                                    <span class="equipment__item-console-price-actual">1290 руб.</span>
+                                    <!--<span class="equipment__item-console-price-discount">2999 руб.</span>-->
+                                </div>
+                                <a data-fancybox="" data-src="#equipment__modal" href="javascript://" class="equipment__item-console-btn add-item" data-id="5" data-title="Selenga T71 DVB-T2" data-price="1290 руб." data-img="img/equipment/Selenga-T71-DVB-T2.png" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="equipment__item-console mix good" data-order="6">
+                           <div class="equipment__item-console-wrap">
+                               <!--<span class="equipment__item-console-new">New</span>-->
+                                <a href="#" class="equipment__item-console-img">
+                                    <img src="img\equipment\Selenga-T71D-DVB-T2.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-console-title"><b>Selenga T71D</b></a>
+                                <ul class="equipment__item-console-character">
+                                    <li>Чувствительность выше среднего</li>
+                                    <li>Кнопки управления на лицевой панели</li>
+                                    <li>Дисплей на лицевой панели</li>
+                                    <li>Dolby Digital AC-3  звук</li>
+                                    <li>Внешний б/п 12 вольт</li>
+                                </ul>
+                                <div class="equipment__item-console-price">
+                                    <span class="equipment__item-console-price-actual">1790 руб.</span>
+                                    <!--<span class="equipment__item-console-price-discount">6999 руб.</span>-->
+                                </div>
+                                <a data-fancybox="" data-src="#equipment__modal" href="javascript://" class="equipment__item-console-btn add-item" data-id="6" data-title="Selenga T71D" data-price="1790 руб." data-img="img\equipment\Selenga-T71D-DVB-T2.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="equipment__item-console mix excellent" data-order="7">
+                           <div class="equipment__item-console-wrap">
+                               <!--<span class="equipment__item-console-discount">-17%</span>-->
+                                <a href="#" class="equipment__item-console-img">
+                                    <img src="img\equipment\Oriel-120-DVB-T2.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-console-title"><b>Oriel 120 DVB-T2</b></a>
+                                <ul class="equipment__item-console-character">
+                                    <li>Высокая чувствительность</li>
+                                    <li>Металлический корпус</li>
+                                    <li>Дисплей на лицевой панели</li>
+                                    <li>Кнопки управления на лицевой панели</li>
+                                    <li>Time Shift</li>
+                                </ul>
+                                <div class="equipment__item-console-price">
+                                    <span class="equipment__item-console-price-actual">1590 руб.</span>
+                                    <!--<span class="equipment__item-console-price-discount">4999 руб.</span>-->
+                                </div>
+                                <a data-fancybox="" data-src="#equipment__modal" href="javascript://" class="equipment__item-console-btn add-item" data-id="7" data-title="Oriel 120 DVB-T2" data-price="1590 руб." data-img="img/equipment/Oriel-120-DVB-T2.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="equipment__item-console mix good" data-order="8">
+                           <div class="equipment__item-console-wrap">
+                               <!--<span class="equipment__item-console-new">New</span>-->
+                                <a href="#" class="equipment__item-console-img">
+                                    <img src="img\equipment\Teniks-DTR-126-DVB-T2.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-console-title"><b>Teniks DTR-126 DVB-T2</b></a>
+                                <ul class="equipment__item-console-character">
+                                    <li>Чувствительность выше среднего</li>
+                                    <li>Пластиковый корпус</li>
+                                    <li>Стандарт DVB-T2/T</li>
+                                    <li>Программный ГИД</li>
+                                    <li>Телетекст</li>
+                                </ul>
+                                <div class="equipment__item-console-price">
+                                    <span class="equipment__item-console-price-actual">1890 руб.</span>
+                                    <!--<span class="equipment__item-console-price-discount">3999 руб.</span>-->
+                                </div>
+                                <a data-fancybox="" data-src="#equipment__modal" href="javascript://" class="equipment__item-console-btn add-item" data-id="8" data-title="Teniks DTR-126 DVB-T2" data-price="1890 руб." data-img="img/equipment/Teniks-DTR-126-DVB-T2.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="equipment__item-console mix middle" data-order="9">
+                           <div class="equipment__item-console-wrap">
+                               <!--<span class="equipment__item-console-discount">-17%</span>-->
+                                <a href="#" class="equipment__item-console-img">
+                                    <img src="img\equipment\Oriel-101-DVB-T2.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-console-title"><b>Oriel 101 DVB-T2</b></a>
+                                <ul class="equipment__item-console-character">
+                                    <li>Средняя чувствительность</li>
+                                    <li>Пластиковый корпус</li>
+                                    <li>Внешний б\п 12в</li>
+                                    <li>Стандарт DVB-T2/T</li>
+                                    <li>Программный ГИД</li>
+                                </ul>
+                                <div class="equipment__item-console-price">
+                                    <span class="equipment__item-console-price-actual">1290 руб.</span>
+                                    <!--<span class="equipment__item-console-price-discount">2999 руб.</span>-->
+                                </div>
+                                <a data-fancybox="" data-src="#equipment__modal" href="javascript://" class="equipment__item-console-btn add-item" data-id="9" data-title="Oriel 101 DVB-T2" data-price="1290 руб." data-img="img/equipment/Oriel-101-DVB-T2.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="equipment__item-console mix middle" data-order="10">
+                           <div class="equipment__item-console-wrap">
+                               <!--<span class="equipment__item-console-new">New</span>-->
+                                <a href="#" class="equipment__item-console-img">
+                                    <img src="img\equipment\Oriel-105-DVB-T2.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-console-title"><b>Oriel 105 DVB-T2</b></a>
+                                <ul class="equipment__item-console-character">
+                                    <li>Средняя чувствительность</li>
+                                    <li>Пластиковый корпус</li>
+                                    <li>Дисплей на лицевой панели</li>
+                                    <li>Кнопки управления на лицевой панели</li>
+                                    <li>Просмотр фото и видео файлов</li>
+                                </ul>
+                                <div class="equipment__item-console-price">
+                                    <span class="equipment__item-console-price-actual">990 руб.</span>
+                                    <!--<span class="equipment__item-console-price-discount">1290 руб.</span>-->
+                                </div>
+                                <a data-fancybox="" data-src="#equipment__modal" href="javascript://" class="equipment__item-console-btn add-item" data-id="10" data-title="Oriel 105 DVB-T2" data-price="990 руб." data-img="img/equipment/Oriel-105-DVB-T2.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="equipment__item-console mix middle" data-order="11">
+                           <div class="equipment__item-console-wrap">
+                                <!--<span class="equipment__item-console-discount">-17%</span>-->
+                                <a href="#" class="equipment__item-console-img">
+                                    <img src="img\equipment\Oriel-203-DVB-T2.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-console-title"><b>Oriel 203 DVB-T2</b></a>
+                                <ul class="equipment__item-console-character">
+                                    <li>Средняя чувствительность</li>
+                                    <li>Пластиковый корпус</li>
+                                    <li>Внешний Б/П</li>
+                                    <li>Кнопки управления на лицевой панели</li>
+                                    <li>USB 2.0 с поддержкой записи</li>
+                                </ul>
+                                <div class="equipment__item-console-price">
+                                    <span class="equipment__item-console-price-actual">890 руб.</span>
+                                    <!--<span class="equipment__item-console-price-discount">1190 руб.</span>-->
+                                </div>
+                                <a data-fancybox="" data-src="#equipment__modal" href="javascript://" class="equipment__item-console-btn add-item" data-id="11" data-title="Oriel 203 DVB-T2" data-price="890 руб." data-img="img/equipment/Oriel-203-DVB-T2.jpg" data-count="100500">Добавить в корзину</a>
+                            </div>
+                        </li>
+                        <li class="equipment__item-console mix good" data-order="12">
+                           <div class="equipment__item-console-wrap">
+                               <!--<span class="equipment__item-console-new">New</span>-->
+                                <a href="#" class="equipment__item-console-img">
+                                    <img src="img\equipment\Selenga-T40-DVB-T2.png" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-console-title"><b>Selenga Т40 DVB-T2</b></a>
+                                <ul class="equipment__item-console-character">
+                                    <li>Чувствительность выше среднего</li>
+                                    <li>Пластиковый корпус</li>
+                                    <li>Стандарт DVB-T2/T</li>
+                                    <li>Программный ГИД</li>
+                                    <li>Телетекст</li>
+                                </ul>
+                                <div class="equipment__item-console-price">
+                                    <span class="equipment__item-console-price-actual">990 руб.</span>
+                                    <!--<span class="equipment__item-console-price-discount">3999 руб.</span>-->
+                                </div>
+                                <a data-fancybox="" data-src="#equipment__modal" href="javascript://" class="equipment__item-console-btn add-item" data-id="12" data-title="Selenga Т40 DVB-T2" data-price="990 руб." data-img="img/equipment/Selenga-T40-DVB-T2.png" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+    <!-------- End Filter desktop console ------------------------------->
+
+    <!-------- Filter desktop antenna ------------------------------->
+                <div class="equipment__antenna">
+                    <div class="container">
+                        <h3>Антенны и аксессуары</h3>
+                    <div class="equipment__antenna-btn">
+                        <button class="equipment__antenna-btn-all active" type="button">Все</button>
+                        <button class="equipment__antenna-btn-middle " type="button" data-filter=".street">Уличные антенны</button>
+                        <button class="equipment__antenna-btn-good " type="button" data-filter=".room">Комнатные антенны</button>
+                        <button class="equipment__antenna-btn-good " type="button" data-filter=".optional">Аксессуары</button>
+                    </div>
+                    <ul class="equipment__list-antenna" id="equipment__antenna-container">
+                        <li class="item equipment__item-antenna mix room">
+                           <div class="equipment__item-antenna-wrap">
+                               <!--<span class="equipment__item-antenna-discount">-17%</span>-->
+                                <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\antena-Locus-kayman.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Кайман L940.10 (Locus)</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Комнатная</li>
+                                    <li>Без усилителя</li>
+                                    <li>Используется в прямой видимости от телевышки</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">490 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="13" data-title="Кайман L940.10 (Locus)" data-price="490 руб." data-img="img\equipment\antena-Locus-kayman.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class=" item equipment__item-antenna mix room">
+                           <div class="equipment__item-antenna-wrap">
+                                <!--<span class="equipment__item-antenna-discount">-10%</span>-->
+                                <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\antena-Locus-kayman.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Кайман L941.10 (Locus)</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Комнатная</li>
+                                    <li>Активная</li>
+                                    <li>Используется в прямой видимости и небольшом удалении от телецентра</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">590 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="14" data-title="Кайман L941.10 (Locus)" data-price="590 руб." data-img="img\equipment\antena-Locus-kayman.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="item equipment__item-antenna mix room">
+                           <div class="equipment__item-antenna-wrap">
+                                <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\Teniks-V018.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Teniks V018</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Комнатная</li>
+                                    <li>Пассивная</li>
+                                    <li>Отлично подходит для центра г. Иркутска</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">590 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="15" data-title="Teniks V018" data-price="590 руб." data-img="img\equipment\Teniks-V018.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="item equipment__item-antenna mix room">
+                           <div class="equipment__item-antenna-wrap">
+                               <!--<span class="equipment__item-antenna-discount">-17%</span>-->
+                                <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\antenna-dca-101.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">D-Color DCA-101</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Комнатная</li>
+                                    <li>Активная</li>
+                                    <li>Используется в прямой видимости и небольшом удалении от телецентра</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">550 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="16" data-title="D-Color DCA-101" data-price="550 руб." data-img="img\equipment\antenna-dca-101.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="item equipment__item-antenna mix room">
+                           <div class="equipment__item-antenna-wrap">
+                               <span class="equipment__item-antenna-strength">С усилением</span>
+                                <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\antena-NEXT-L911-05-Locus.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">NEXT 3.0 L911.05 (Locus)</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Комнатная</li>
+                                    <li>Мощный усилитель</li>
+                                    <li>Используется в сложных местах и небольшом удалении от ретранслятора</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">790 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="17" data-title="NEXT 3.0 L911.05 (Locus)" data-price="790 руб." data-img="img\equipment\antena-NEXT-L911-05-Locus.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="item equipment__item-antenna mix room">
+                           <div class="equipment__item-antenna-wrap">
+                               <!--<span class="equipment__item-antenna-discount">-10%</span>-->
+                                <span class="equipment__item-antenna-strength">С усилением</span>
+                                <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\antena-Locus-L922-06-ALTA.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">L922.06 ALTA (Locus)</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Комнатная</li>
+                                    <li>Мощный усилитель</li>
+                                    <li>Используется в сложных местах и небольшом удалении от ретранслятора</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">790 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="18" data-title="L922.06 ALTA (Locus)" data-price="790 руб." data-img="img\equipment\antena-Locus-L922-06-ALTA.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="item equipment__item-antenna mix street">
+                           <div class="equipment__item-antenna-wrap">
+                               <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\antena-Locus-Zenit-14.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Зенит 14F (Locus)</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Уличная</li>
+                                    <li>Без усилителя</li>
+                                    <li>Для стабильного приема в прямой видимости на телецентр</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">499 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">550 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="19" data-title="Зенит 14F (Locus)" data-price="499 руб." data-img="img\equipment\antena-Locus-Zenit-14.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="item equipment__item-antenna mix street">
+                            <div class="equipment__item-antenna-wrap">
+                                <span class="equipment__item-antenna-strength">С усилением</span>
+                                <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\antena-Locus-Zenit-14.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Зенит 14AF (Locus)</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Уличная</li>
+                                    <li>С усилителем</li>
+                                    <li>Стабильный прием 4-7 км от телецентра</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">650 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="20" data-title="Зенит 14AF (Locus)" data-price="650 руб." data-img="img\equipment\antena-Locus-Zenit-14.jpg" data-count="100500">Добавить в корзину</a>
+                            </div>
+                        </li>
+                        <li class="item equipment__item-antenna mix street">
+                            <div class="equipment__item-antenna-wrap">
+                                <span class="equipment__item-antenna-strength">С усилением</span>
+                                <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\antena-Locus-Zenit-20.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Зенит 20AF</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Уличная</li>
+                                    <li>С усилителем</li>
+                                    <li>Стабильный прием 5-8 км от телецентра</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">750 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="21" data-title="Зенит 20AF" data-price="750 руб." data-img="img\equipment\antena-Locus-Zenit-20.jpg" data-count="100500">Добавить в корзину</a>
+                            </div>
+                        </li>
+                        <li class="item equipment__item-antenna mix street">
+                            <div class="equipment__item-antenna-wrap">
+                                <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\l31.18d_new.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Эфир 18F</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Уличная</li>
+                                    <li>Пассивная</li>
+                                    <li>Стабильный прием в черте города и прямой видимости на телевышку</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">790 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="22" data-title="Эфир 18F" data-price="790 руб." data-img="img\equipment\l31.18d_new.jpg" data-count="100500">Добавить в корзину</a>
+                            </div>
+                        </li>
+                        <li class="item equipment__item-antenna mix street">
+                           <div class="equipment__item-antenna-wrap">
+                               <span class="equipment__item-antenna-strength">С усилением</span>
+                                <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\l31.18d_new.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Эфир 18AF</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Уличная</li>
+                                    <li>С усилителем</li>
+                                    <li>Стабильный прием за городом 10-15 км от телевышки</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">890 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="23" data-title="Эфир 18AF" data-price="890 руб." data-img="img\equipment\l31.18d_new.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="item equipment__item-antenna mix street">
+                           <div class="equipment__item-antenna-wrap">
+                               <span class="equipment__item-antenna-strength">С усилением</span>
+                                <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\l31.18d_new.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Эфир 18AF TURBO</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Уличная</li>
+                                    <li>С мало шумящим усилителем</li>
+                                    <li>Стабильный прием за городом 15-20 км от телецентра</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual"> 390 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="24" data-title="Эфир 18AF TURBO" data-price="390 руб." data-img="img\equipment\l31.18d_new.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+						<li class="item equipment__item-antenna mix street">
+                           <div class="equipment__item-antenna-wrap">
+                               <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\antena-Locus-Meridian-12.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Меридиан 12F</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Уличная</li>
+                                    <li>Пассивная</li>
+                                    <li>Для приема сигнала в сложных условиях и черте города 5-7 км</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">1100 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="25" data-title="Меридиан 12F" data-price="1100 руб." data-img="img\equipment\antena-Locus-Meridian-12.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+						<li class="item equipment__item-antenna mix street">
+                           <div class="equipment__item-antenna-wrap">
+                               <span class="equipment__item-antenna-strength">С усилением</span>
+                                <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\antena-Locus-Meridian-12.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Меридиан 12AF</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Уличная</li>
+                                    <li>С балансным усилителем</li>
+                                    <li>Для приема в сложных условиях или на значительном удалении 25-30 км</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">1290 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="26" data-title="Меридиан 12AF" data-price="1290 руб." data-img="img\equipment\antena-Locus-Meridian-12.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="item equipment__item-antenna mix optional">
+                           <div class="equipment__item-antenna-wrap">
+                               <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\la-32u.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Усилитель телевизионный Locus LA-32U</a>
+                                <ul class="equipment__item-antenna-character equipment__item-antenna-character-minh">
+                                    <li>Для усиления сигнала от пассивной антенны</li>
+                                    <li>Питание 5в от приставки или USB инжектора LI-104</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">390 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="27" data-title="Усилитель телевизионных сигналов Locus LA-32U" data-price="390 руб." data-img="img/equipment/la-32u.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="item equipment__item-antenna mix optional">
+                           <div class="equipment__item-antenna-wrap">
+                               <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\li 104.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">USB инжектор питания LI-104</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Для питания активных цифровых антенн от USB разъема телевизора </li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">260 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="28" data-title="USB инжектор питания LI-104" data-price="260 руб." data-img="img/equipment/li%20104.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="item equipment__item-antenna mix optional">
+                           <div class="equipment__item-antenna-wrap">
+                               <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\li_102_ips_7.gif" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Инжектор питания LI-102 220в</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Для питания DVB-T2 антенн с усилителем от сети 220в</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">360 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="29" data-title="Инжектор питания LI-102 220в" data-price="360 руб." data-img="img/equipment/li_102_ips_7.gif" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="item equipment__item-antenna mix optional">
+                           <div class="equipment__item-antenna-wrap">
+                               <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\bracket.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Кронштейн для цифровых антенн</a>
+                                <ul class="equipment__item-antenna-character equipment__item-antenna-character-minh">
+                                    <li>Стеновой кронштейн, порошковое покрытие. 20см</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">200 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="30" data-title="Кронштейн для цифровых антенн" data-price="200 руб." data-img="img/equipment/bracket.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="item equipment__item-antenna mix optional">
+                           <div class="equipment__item-antenna-wrap">
+                               <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\machta.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Мачта антенная 3 метра МТИ-3</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Составная горячее цинкование, 2 колена по 1,5 метра</li>
+                                    <li>Растяжки в комплекте</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">1150 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="31" data-title="Мачта антенная 3 метра МТИ-3" data-price="1150 руб." data-img="img/equipment/machta.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+    <!-------- End Filter desktop antenna ------------------------------->
+            </div>
+            <div class="slider-mobile">
+                <div class="slider-mobile-console">
+                    <div class="equipment__console-slider">
+                        <h4>Чувствительность приставки</h4>
+                        <ul class="equipment__console-slider-list">
+                            <li class="equipment__console-slider-item equipment__console-slider-item-mobile" data-f=".all">Все</li>
+                            <li class="equipment__console-slider-item equipment__console-slider-item-mobile"  data-f=".middle">Средняя</li>
+                            <li class="equipment__console-slider-item equipment__console-slider-item-mobile" data-f=".good">Хорошая</li>
+                            <li class="equipment__console-slider-item equipment__console-slider-item-mobile" data-f=".excellent">Отличная</li>
+                        </ul>
+                        <ul class="equipment__console-slider-line-list">
+                            <li class="equipment__console-slider-line equipment__console-slider-line1"></li>
+                            <li class="equipment__console-slider-line equipment__console-slider-line2"></li>
+                            <li class="equipment__console-slider-line equipment__console-slider-line3"></li>
+                            <li class="equipment__console-slider-line equipment__console-slider-line4"></li>
+                        </ul>
+                       <input type="range" min="1" max="4" step="1" value="1" class="equipment__console-roller equipment__console-roller-mob">
+                    </div>
+                    <div class="package-filter">
+					    <div class="btn-group hidden-sm-down" data-toggle="buttons">
+				            <label class="btn btn-primary active">
+								<input filter='all' checked="" class="slider__mob-all" type="radio">&nbsp;Все
+				            </label>
+				            <label class="btn btn-primary">
+								<input filter='middle' class="slider__mob-middle" type="radio">&nbsp;Средняя
+				            </label>
+				            <label class="btn btn-primary">
+								<input filter='good' class="slider__mob-good" type="radio">&nbsp;Хорошая
+				            </label>
+				            <label class="btn btn-primary">
+								    <input filter='excellent' class="slider__mob-excellent" type="radio">&nbsp;Отличная
+				            </label>
+				        </div>
+				    </div>
+                    <ul class="complects-slider">
+                        <li class="a-complect" category="excellent" data-order="1">
+                            <div class="equipment__item-console-wrap">
+                                <!--<span class="equipment__item-console-discount">-17%</span>-->
+                                <a href="#" class="equipment__item-console-img">
+                                    <img src="img\equipment\Oriel-302-DVB-T2.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-console-title"><b>Oriel 302 DVB-T2</b></a>
+                                <ul class="equipment__item-console-character">
+                                    <li>Демодулятор  Sony. Самая Высокая чувствительность.</li>
+                                    <li>Пластиковый  корпус</li>
+                                    <li>Внешний б/п 12вольт</li>
+                                    <li>Просмотр фото и видео файлов</li>
+                                    <li>USB 2.0 с поддержкой записи</li>
+                               </ul>
+                                <div class="equipment__item-console-price">
+                                    <span class="equipment__item-console-price-actual">1890 руб.</span>
+                                    <!--<span class="equipment__item-console-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a data-fancybox="" data-src="#equipment__modal" href="javascript://" class="equipment__item-console-btn add-item" data-id="1" data-title="Oriel 302 DVB-T2" data-price="1890 руб." data-img="img/equipment/Oriel-302-DVB-T2.jpg" data-count="100500">Добавить в корзину</a>
+                            </div>
+                        </li>
+                        <li class="a-complect" category="excellent" data-order="2">
+                           <div class="equipment__item-console-wrap">
+                               <!--<span class="equipment__item-console-discount">-17%</span>-->
+                                <a href="#" class="equipment__item-console-img">
+                                    <img src="img\equipment\2.png" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-console-title"><b>D-Color DC1501HD DVB-T2</b></a>
+                                <ul class="equipment__item-console-character">
+                                    <li>Высокая чувствительность</li>
+                                    <li>Металлический корпус</li>
+                                    <li>Дисплей на лицевой панели</li>
+                                    <li>Кнопки управления на лицевой панели</li>
+                                    <li>Цифровой звук DOLBY DIGITAL \ AC-3</li>
+                                </ul>
+                                <div class="equipment__item-console-price">
+                                    <span class="equipment__item-console-price-actual">2190 руб.</span>
+                                    <!--<span class="equipment__item-console-price-discount">4999 руб.</span>-->
+                                </div>
+                                <a data-fancybox="" data-src="#equipment__modal" href="javascript://" class="equipment__item-console-btn add-item" data-id="2" data-title="D-Color DC1501HD DVB-T2" data-price="2190 руб." data-img="img/equipment/2.png" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="a-complect" category="excellent" data-order="3">
+                           <div class="equipment__item-console-wrap">
+                               <!--<span class="equipment__item-console-new">New</span>-->
+                                <a href="#" class="equipment__item-console-img">
+                                    <img src="img\equipment\Oriel-314-plus-DVB-T2.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-console-title"><b>Oriel 314+ DVB-T2</b></a>
+                                <ul class="equipment__item-console-character">
+                                    <li>Высокая чувствительность</li>
+                                    <li>Металлический корпус</li>
+                                    <li>Дисплей на лицевой панели</li>
+                                    <li>Кнопки управления на лицевой панели</li>
+                                    <li>Просмотр фото и видео файлов</li>
+                                </ul>
+                                <div class="equipment__item-console-price">
+                                    <span class="equipment__item-console-price-actual">1790 руб.</span>
+                                    <!--<span class="equipment__item-console-price-discount">3999 руб.</span>-->
+                                </div>
+                                <a data-fancybox="" data-src="#equipment__modal" href="javascript://" class="equipment__item-console-btn add-item" data-id="3" data-title="Oriel 314+ DVB-T2" data-price="1790 руб." data-img="img/equipment/Oriel-314-plus-DVB-T2.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="a-complect" category="excellent" data-order="4">
+                            <div class="equipment__item-console-wrap">
+                                <!--<span class="equipment__item-console-discount">-17%</span>-->
+                                <a href="#" class="equipment__item-console-img">
+                                    <img src="img\equipment\Selenga-HD-930D.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-console-title"><b>Selenga HD 930D</b></a>
+                                <ul class="equipment__item-console-character">
+                                    <li>Высокая чувствительность</li>
+                                    <li>Металлический корпус</li>
+                                    <li>Дисплей на лицевой панели</li>
+                                    <li>Кнопки управления на лицевой панели</li>
+                                    <li>Цифровой звук DOLBY DIGITAL \ AC-3</li>
+                                </ul>
+                                <div class="equipment__item-console-price">
+                                    <span class="equipment__item-console-price-actual">1890 руб.</span>
+                                    <!--<span class="equipment__item-console-price-discount">6999 руб.</span>-->
+                                </div>
+                                <a data-fancybox="" data-src="#equipment__modal" href="javascript://" class="equipment__item-console-btn add-item" data-id="4" data-title="Selenga HD 930D" data-price="1890 руб." data-img="img/equipment/Selenga-HD-930D.jpg" data-count="100500">Добавить в корзину</a>
+                            </div>
+                        </li>
+                        <li class="a-complect" category="good" data-order="5">
+                           <div class="equipment__item-console-wrap">
+                               <!--<span class="equipment__item-console-discount">-17%</span>-->
+                                <a href="#" class="equipment__item-console-img">
+                                    <img src="img\equipment\Selenga-T71-DVB-T2.png" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-console-title"><b>Selenga T71 DVB-T2</b></a>
+                                <ul class="equipment__item-console-character">
+                                    <li>Чувствительность выше среднего</li>
+                                    <li>Кнопки управления на лицевой панели</li>
+                                    <li>Дисплей на лицевой панели</li>
+                                    <li>Dolby Digital AC-3  звук</li>
+                                    <li>Внешний б/п 12 вольт</li>
+                                </ul>
+                                <div class="equipment__item-console-price">
+                                    <span class="equipment__item-console-price-actual">1290 руб.</span>
+                                    <!--<span class="equipment__item-console-price-discount">2999 руб.</span>-->
+                                </div>
+                                <a data-fancybox="" data-src="#equipment__modal" href="javascript://" class="equipment__item-console-btn add-item" data-id="5" data-title="Selenga T71 DVB-T2" data-price="1290 руб." data-img="img/equipment/Selenga-T71-DVB-T2.png" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="a-complect" category="good" data-order="6">
+                           <div class="equipment__item-console-wrap">
+                               <!--<span class="equipment__item-console-new">New</span>-->
+                                <a href="#" class="equipment__item-console-img">
+                                    <img src="img\equipment\Selenga-T71D-DVB-T2.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-console-title"><b>Selenga T71D</b></a>
+                                <ul class="equipment__item-console-character">
+                                    <li>Чувствительность выше среднего</li>
+                                    <li>Кнопки управления на лицевой панели</li>
+                                    <li>Дисплей на лицевой панели</li>
+                                    <li>Dolby Digital AC-3  звук</li>
+                                    <li>Внешний б/п 12 вольт</li>
+                                </ul>
+                                <div class="equipment__item-console-price">
+                                    <span class="equipment__item-console-price-actual">1790 руб.</span>
+                                    <!--<span class="equipment__item-console-price-discount">6999 руб.</span>-->
+                                </div>
+                                <a data-fancybox="" data-src="#equipment__modal" href="javascript://" class="equipment__item-console-btn add-item" data-id="6" data-title="Selenga T71D" data-price="1790 руб." data-img="img\equipment\Selenga-T71D-DVB-T2.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="a-complect" category="excellent" data-order="7">
+                           <div class="equipment__item-console-wrap">
+                               <!--<span class="equipment__item-console-discount">-17%</span>-->
+                                <a href="#" class="equipment__item-console-img">
+                                    <img src="img\equipment\Oriel-120-DVB-T2.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-console-title"><b>Oriel 120 DVB-T2</b></a>
+                                <ul class="equipment__item-console-character">
+                                    <li>Высокая чувствительность</li>
+                                    <li>Металлический корпус</li>
+                                    <li>Дисплей на лицевой панели</li>
+                                    <li>Кнопки управления на лицевой панели</li>
+                                    <li>Time Shift</li>
+                                </ul>
+                                <div class="equipment__item-console-price">
+                                    <span class="equipment__item-console-price-actual">1590 руб.</span>
+                                    <!--<span class="equipment__item-console-price-discount">4999 руб.</span>-->
+                                </div>
+                                <a data-fancybox="" data-src="#equipment__modal" href="javascript://" class="equipment__item-console-btn add-item" data-id="7" data-title="Oriel 120 DVB-T2" data-price="1590 руб." data-img="img/equipment/Oriel-120-DVB-T2.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="a-complect" category="good" data-order="8">
+                           <div class="equipment__item-console-wrap">
+                               <!--<span class="equipment__item-console-new">New</span>-->
+                                <a href="#" class="equipment__item-console-img">
+                                    <img src="img\equipment\Teniks-DTR-126-DVB-T2.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-console-title"><b>Teniks DTR-126 DVB-T2</b></a>
+                                <ul class="equipment__item-console-character">
+                                    <li>Чувствительность выше среднего</li>
+                                    <li>Пластиковый корпус</li>
+                                    <li>Стандарт DVB-T2/T</li>
+                                    <li>Программный ГИД</li>
+                                    <li>Телетекст</li>
+                                </ul>
+                                <div class="equipment__item-console-price">
+                                    <span class="equipment__item-console-price-actual">1890 руб.</span>
+                                    <!--<span class="equipment__item-console-price-discount">3999 руб.</span>-->
+                                </div>
+                                <a data-fancybox="" data-src="#equipment__modal" href="javascript://" class="equipment__item-console-btn add-item" data-id="8" data-title="Teniks DTR-126 DVB-T2" data-price="1890 руб." data-img="img/equipment/Teniks-DTR-126-DVB-T2.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="a-complect" category="middle" data-order="9">
+                           <div class="equipment__item-console-wrap">
+                               <!--<span class="equipment__item-console-discount">-17%</span>-->
+                                <a href="#" class="equipment__item-console-img">
+                                    <img src="img\equipment\Oriel-101-DVB-T2.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-console-title"><b>Oriel 101 DVB-T2</b></a>
+                                <ul class="equipment__item-console-character">
+                                    <li>Средняя чувствительность</li>
+                                    <li>Пластиковый корпус</li>
+                                    <li>Внешний б\п 12в</li>
+                                    <li>Стандарт DVB-T2/T</li>
+                                    <li>Программный ГИД</li>
+                                </ul>
+                                <div class="equipment__item-console-price">
+                                    <span class="equipment__item-console-price-actual">1290 руб.</span>
+                                    <!--<span class="equipment__item-console-price-discount">2999 руб.</span>-->
+                                </div>
+                                <a data-fancybox="" data-src="#equipment__modal" href="javascript://" class="equipment__item-console-btn add-item" data-id="9" data-title="Oriel 101 DVB-T2" data-price="1290 руб." data-img="img/equipment/Oriel-101-DVB-T2.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="a-complect" category="middle" data-order="10">
+                           <div class="equipment__item-console-wrap">
+                               <!--<span class="equipment__item-console-new">New</span>-->
+                                <a href="#" class="equipment__item-console-img">
+                                    <img src="img\equipment\Oriel-105-DVB-T2.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-console-title"><b>Oriel 105 DVB-T2</b></a>
+                                <ul class="equipment__item-console-character">
+                                    <li>Средняя чувствительность</li>
+                                    <li>Пластиковый корпус</li>
+                                    <li>Дисплей на лицевой панели</li>
+                                    <li>Кнопки управления на лицевой панели</li>
+                                    <li>Просмотр фото и видео файлов</li>
+                                </ul>
+                                <div class="equipment__item-console-price">
+                                    <span class="equipment__item-console-price-actual">990 руб.</span>
+                                    <!--<span class="equipment__item-console-price-discount">1290 руб.</span>-->
+                                </div>
+                                <a data-fancybox="" data-src="#equipment__modal" href="javascript://" class="equipment__item-console-btn add-item" data-id="10" data-title="Oriel 105 DVB-T2" data-price="990 руб." data-img="img/equipment/Oriel-105-DVB-T2.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="a-complect" category="middle" data-order="11">
+                           <div class="equipment__item-console-wrap">
+                                <!--<span class="equipment__item-console-discount">-17%</span>-->
+                                <a href="#" class="equipment__item-console-img">
+                                    <img src="img\equipment\Oriel-203-DVB-T2.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-console-title"><b>Oriel 203 DVB-T2</b></a>
+                                <ul class="equipment__item-console-character">
+                                    <li>Средняя чувствительность</li>
+                                    <li>Пластиковый корпус</li>
+                                    <li>Внешний Б/П</li>
+                                    <li>Кнопки управления на лицевой панели</li>
+                                    <li>USB 2.0 с поддержкой записи</li>
+                                </ul>
+                                <div class="equipment__item-console-price">
+                                    <span class="equipment__item-console-price-actual">890 руб.</span>
+                                    <!--<span class="equipment__item-console-price-discount">1190 руб.</span>-->
+                                </div>
+                                <a data-fancybox="" data-src="#equipment__modal" href="javascript://" class="equipment__item-console-btn add-item" data-id="11" data-title="Oriel 203 DVB-T2" data-price="890 руб." data-img="img/equipment/Oriel-203-DVB-T2.jpg" data-count="100500">Добавить в корзину</a>
+                            </div>
+                        </li>
+                        <li class="a-complect" category="good" data-order="12">
+                           <div class="equipment__item-console-wrap">
+                               <!--<span class="equipment__item-console-new">New</span>-->
+                                <a href="#" class="equipment__item-console-img">
+                                    <img src="img\equipment\Selenga-T40-DVB-T2.png" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-console-title"><b>Selenga Т40 DVB-T2</b></a>
+                                <ul class="equipment__item-console-character">
+                                    <li>Чувствительность выше среднего</li>
+                                    <li>Пластиковый корпус</li>
+                                    <li>Стандарт DVB-T2/T</li>
+                                    <li>Программный ГИД</li>
+                                    <li>Телетекст</li>
+                                </ul>
+                                <div class="equipment__item-console-price">
+                                    <span class="equipment__item-console-price-actual">990 руб.</span>
+                                    <!--<span class="equipment__item-console-price-discount">3999 руб.</span>-->
+                                </div>
+                                <a data-fancybox="" data-src="#equipment__modal" href="javascript://" class="equipment__item-console-btn add-item" data-id="12" data-title="Selenga Т40 DVB-T2" data-price="990 руб." data-img="img/equipment/Selenga-T40-DVB-T2.png" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section__title-block">
+                    <span class="section__title-block-line section__title-block-linetl"></span>
+                    <span class="section__title-block-line section__title-block-linebl"></span>
+                    <span class="section__title-block-icon"></span>
+                    <span class="section__title-block-line section__title-block-linetr"></span>
+                    <span class="section__title-block-line section__title-block-linebr"></span>
+                </div>
+                <div class="slider-mobile-antenna">
+                    <h3>Антенны и аксессуары</h3>
+                    <div class="slider-mobile-antenna-mob">
+                        <div class="package-filter2">
+                            <select class="btn-group hidden-sm-down" data-toggle="buttons">
+                                <option filter="all">Все
+                                <option class="filter__s" filter="street" selected="">Уличные антенны
+                                <option filter="room">Комнатные антенны
+                                <option filter="optional">Аксессуары и оборудование
+                            </select>
+				        </div>
+                    </div>
+                    <div class="package-filter1">
+					    <div class="btn-group hidden-sm-down" data-toggle="buttons">
+				            <label class="btn btn-primary active">
+								<input filter='all' checked="" class="slider__mob-all" type="radio">&nbsp;Все
+				            </label>
+				            <label class="btn btn-primary">
+								<input filter='street' class="slider__mob-middle" type="radio">&nbsp;Уличные антенны
+				            </label>
+				            <label class="btn btn-primary">
+								<input filter='room' class="slider__mob-good" type="radio">&nbsp;Комнатные антенны
+				            </label>
+				            <label class="btn btn-primary">
+								    <input filter='optional' class="slider__mob-excellent" type="radio">&nbsp;Аксессуары
+				            </label>
+				        </div>
+				    </div>
+                    <div class="complects-slider1">
+                        <li class="a-complect" category="room">
+                           <div class="equipment__item-antenna-wrap">
+                               <!--<span class="equipment__item-antenna-discount">-17%</span>-->
+                                <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\antena-Locus-kayman.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Кайман L940.10 (Locus)</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Комнатная</li>
+                                    <li>Без усилителя</li>
+                                    <li>Используется в прямой видимости от телевышки</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">490 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="13" data-title="Кайман L940.10 (Locus)" data-price="490 руб." data-img="img\equipment\antena-Locus-kayman.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="a-complect" category="room">
+                           <div class="equipment__item-antenna-wrap">
+                                <!--<span class="equipment__item-antenna-discount">-10%</span>-->
+                                <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\antena-Locus-kayman.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Кайман L941.10 (Locus)</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Комнатная</li>
+                                    <li>Активная</li>
+                                    <li>Используется в прямой видимости и небольшом удалении от телецентра</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">590 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="14" data-title="Кайман L941.10 (Locus)" data-price="590 руб." data-img="img\equipment\antena-Locus-kayman.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="a-complect" category="room">
+                           <div class="equipment__item-antenna-wrap">
+                                <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\Teniks-V018.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Teniks V018</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Комнатная</li>
+                                    <li>Пассивная</li>
+                                    <li>Отлично подходит для центра г. Иркутска</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">590 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="15" data-title="Teniks V018" data-price="590 руб." data-img="img\equipment\Teniks-V018.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="a-complect" category="room">
+                           <div class="equipment__item-antenna-wrap">
+                               <!--<span class="equipment__item-antenna-discount">-17%</span>-->
+                                <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\antenna-dca-101.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">D-Color DCA-101</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Комнатная</li>
+                                    <li>Активная</li>
+                                    <li>Используется в прямой видимости и небольшом удалении от телецентра</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">550 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="16" data-title="D-Color DCA-101" data-price="550 руб." data-img="img\equipment\antenna-dca-101.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="a-complect" category="room">
+                           <div class="equipment__item-antenna-wrap">
+                               <span class="equipment__item-antenna-strength">С усилением</span>
+                                <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\antena-NEXT-L911-05-Locus.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">NEXT 3.0 L911.05 (Locus)</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Комнатная</li>
+                                    <li>Мощный усилитель</li>
+                                    <li>Используется в сложных местах и небольшом удалении от ретранслятора</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">790 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="17" data-title="NEXT 3.0 L911.05 (Locus)" data-price="790 руб." data-img="img\equipment\antena-NEXT-L911-05-Locus.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="a-complect" category="room">
+                           <div class="equipment__item-antenna-wrap">
+                               <!--<span class="equipment__item-antenna-discount">-10%</span>-->
+                                <span class="equipment__item-antenna-strength">С усилением</span>
+                                <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\antena-Locus-L922-06-ALTA.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">L922.06 ALTA (Locus)</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Комнатная</li>
+                                    <li>Мощный усилитель</li>
+                                    <li>Используется в сложных местах и небольшом удалении от ретранслятора</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">790 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="18" data-title="L922.06 ALTA (Locus)" data-price="790 руб." data-img="img\equipment\antena-Locus-L922-06-ALTA.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="a-complect" category="street">
+                           <div class="equipment__item-antenna-wrap">
+                               <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\antena-Locus-Zenit-14.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Зенит 14F (Locus)</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Уличная</li>
+                                    <li>Без усилителя</li>
+                                    <li>Для стабильного приема в прямой видимости на телецентр</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">499 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">550 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="19" data-title="Зенит 14F (Locus)" data-price="499 руб." data-img="img\equipment\antena-Locus-Zenit-14.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="a-complect" category="street">
+                            <div class="equipment__item-antenna-wrap">
+                                <span class="equipment__item-antenna-strength">С усилением</span>
+                                <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\antena-Locus-Zenit-14.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Зенит 14AF (Locus)</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Уличная</li>
+                                    <li>С усилителем</li>
+                                    <li>Стабильный прием 4-7 км от телецентра</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">650 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="20" data-title="Зенит 14AF (Locus)" data-price="650 руб." data-img="img\equipment\antena-Locus-Zenit-14.jpg" data-count="100500">Добавить в корзину</a>
+                            </div>
+                        </li>
+                        <li class="a-complect" category="street">
+                            <div class="equipment__item-antenna-wrap">
+                                <span class="equipment__item-antenna-strength">С усилением</span>
+                                <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\antena-Locus-Zenit-20.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Зенит 20AF</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Уличная</li>
+                                    <li>С усилителем</li>
+                                    <li>Стабильный прием 5-8 км от телецентра</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">750 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="21" data-title="Зенит 20AF" data-price="750 руб." data-img="img\equipment\antena-Locus-Zenit-20.jpg" data-count="100500">Добавить в корзину</a>
+                            </div>
+                        </li>
+                        <li class="a-complect" category="street">
+                            <div class="equipment__item-antenna-wrap">
+                                <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\l31.18d_new.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Эфир 18F</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Уличная</li>
+                                    <li>Пассивная</li>
+                                    <li>Стабильный прием в черте города и прямой видимости на телевышку</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">790 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="22" data-title="Эфир 18F" data-price="790 руб." data-img="img\equipment\l31.18d_new.jpg" data-count="100500">Добавить в корзину</a>
+                            </div>
+                        </li>
+                        <li class="a-complect" category="street">
+                           <div class="equipment__item-antenna-wrap">
+                               <span class="equipment__item-antenna-strength">С усилением</span>
+                                <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\l31.18d_new.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Эфир 18AF</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Уличная</li>
+                                    <li>С усилителем</li>
+                                    <li>Стабильный прием за городом 10-15 км от телевышки</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">890 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="23" data-title="Эфир 18AF" data-price="890 руб." data-img="img\equipment\l31.18d_new.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="a-complect" category="street">
+                           <div class="equipment__item-antenna-wrap">
+                               <span class="equipment__item-antenna-strength">С усилением</span>
+                                <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\l31.18d_new.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Эфир 18AF TURBO</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Уличная</li>
+                                    <li>С мало шумящим усилителем</li>
+                                    <li>Стабильный прием за городом 15-20 км от телецентра</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual"> 390 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="24" data-title="Эфир 18AF TURBO" data-price="390 руб." data-img="img\equipment\l31.18d_new.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+						<li class="a-complect" category="street">
+                           <div class="equipment__item-antenna-wrap">
+                               <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\antena-Locus-Meridian-12.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Меридиан 12F</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Уличная</li>
+                                    <li>Пассивная</li>
+                                    <li>Для приема сигнала в сложных условиях и черте города 5-7 км</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">1100 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="25" data-title="Меридиан 12F" data-price="1100 руб." data-img="img\equipment\antena-Locus-Meridian-12.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+						<li class="a-complect" category="street">
+                           <div class="equipment__item-antenna-wrap">
+                               <span class="equipment__item-antenna-strength">С усилением</span>
+                                <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\antena-Locus-Meridian-12.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Меридиан 12AF</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Уличная</li>
+                                    <li>С балансным усилителем</li>
+                                    <li>Для приема в сложных условиях или на значительном удалении 25-30 км</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">1290 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="26" data-title="Меридиан 12AF" data-price="1290 руб." data-img="img\equipment\antena-Locus-Meridian-12.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="a-complect" category="optional">
+                           <div class="equipment__item-antenna-wrap">
+                               <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\la-32u.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Усилитель телевизионный Locus LA-32U</a>
+                                <ul class="equipment__item-antenna-character equipment__item-antenna-character-minh">
+                                    <li>Для усиления сигнала от пассивной антенны</li>
+                                    <li>Питание 5в от приставки или USB инжектора LI-104</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">390 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="27" data-title="Усилитель телевизионных сигналов Locus LA-32U" data-price="390 руб." data-img="img/equipment/la-32u.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="a-complect" category="optional">
+                           <div class="equipment__item-antenna-wrap">
+                               <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\li 104.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">USB инжектор питания LI-104</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Для питания активных цифровых антенн от USB разъема телевизора </li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">260 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="28" data-title="USB инжектор питания LI-104" data-price="260 руб." data-img="img/equipment/li%20104.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="a-complect" category="optional">
+                           <div class="equipment__item-antenna-wrap">
+                               <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\li_102_ips_7.gif" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Инжектор питания LI-102 220в</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Для питания DVB-T2 антенн с усилителем от сети 220в</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">360 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="29" data-title="Инжектор питания LI-102 220в" data-price="360 руб." data-img="img/equipment/li_102_ips_7.gif" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="a-complect" category="optional">
+                           <div class="equipment__item-antenna-wrap">
+                               <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\bracket.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Кронштейн для цифровых антенн</a>
+                                <ul class="equipment__item-antenna-character equipment__item-antenna-character-minh">
+                                    <li>Стеновой кронштейн, порошковое покрытие. 20см</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">200 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="30" data-title="Кронштейн для цифровых антенн" data-price="200 руб." data-img="img/equipment/bracket.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                        <li class="a-complect" category="optional">
+                           <div class="equipment__item-antenna-wrap">
+                               <a href="#" class="equipment__item-antenna-img">
+                                    <img src="img\equipment\machta.jpg" alt="">
+                                </a>
+                                <a href="#" class="equipment__item-antenna-title">Мачта антенная 3 метра МТИ-3</a>
+                                <ul class="equipment__item-antenna-character">
+                                    <li>Составная горячее цинкование, 2 колена по 1,5 метра</li>
+                                    <li>Растяжки в комплекте</li>
+                                </ul>
+                                <div class="equipment__item-antenna-price">
+                                    <span class="equipment__item-antenna-price-actual">1150 руб.</span>
+                                    <!--<span class="equipment__item-antenna-price-discount">5999 руб.</span>-->
+                                </div>
+                                <a class="equipment__item-antenna-btn add-item" data-fancybox="" data-src="#equipment__modal" href="javascript://" data-id="31" data-title="Мачта антенная 3 метра МТИ-3" data-price="1150 руб." data-img="img/equipment/machta.jpg" data-count="100500">Добавить в корзину</a>
+                           </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="question" id="question">
+           <a href="#zaday_vopros" class="link__m"></a>
+            <div class="section__title">
+                <h2>Часто задаваемые вопросы</h2>
+                <div class="section__title-block">
+                    <span class="section__title-block-line section__title-block-linetl"></span>
+                    <span class="section__title-block-line section__title-block-linebl"></span>
+                    <span class="section__title-block-icon"></span>
+                    <span class="section__title-block-line section__title-block-linetr"></span>
+                    <span class="section__title-block-line section__title-block-linebr"></span>
+                </div>
+            </div>
+            <div class="question__accordion container">
+                <ul class="question__accordion-list">
+                    <li class="question__accordion-item">
+                        <a href="#">Антенна Ключ к бесплатному ТВ, что это?</a>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        <div class="question__accordion-item-text">
+                            <p>Это обычная комнатная антенна для приема цифровых каналов.</p>
+                            <p>Реклама утверждает, что эта антенна может принимать 80 каналов, но это обман.</p>
+                        </div>
+                    </li>
+                    <li class="question__accordion-item">
+                        <a href="#">На какой частоте идет вещание в Иркутске и Иркутском районе?</a>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        <div class="question__accordion-item-text">
+                            <p>Первый мультиплекс РТРС-1: 38 канал или 610 Мгц.</p>
+                            <p>Второй мультиплекс  РТРС-2: 57 канал или 762 Мгц.</p>
+                        </div>
+                    </li>
+                    <li class="question__accordion-item">
+                        <a href="#">Какой у меня телевизор и нужна ли мне приставка?</a>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        <div class="question__accordion-item-text">
+                            <p> Как правило все новые телевизоры оснащены тюнером  для приема цифрового телевидения.</p>
+                            <p>Узнать это просто, загляните в инструкцию. Если ваш ТВ поддерживает формат  DVB-T2, значит вам не нужна специальная приставка.</p>
+                        </div>
+                    </li>
+                    <li class="question__accordion-item">
+                        <a href="#">Сколько гарантия на приставки?</a>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        <div class="question__accordion-item-text">
+                            <p>На все цифровые приставки кроме  Dcolor гарантия 1 год.</p>
+                            <p> На Dcolor 2 года</p>
+                        </div>
+                    </li>
+                    <li class="question__accordion-item">
+                        <a href="#">Можно ли вернуть вам антенну или приставку?</a>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        <div class="question__accordion-item-text">
+                            <p>Да можно. Мы даем оборудование на проверку. в течение 14 дней вы можете его вернуть,при условии сохранения товарного вида</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="feedback" id="feedback">
+            <a href="#feedback" class="link"></a>
+            <div class="section__title">
+                <h2>Форма обратной связи</h2>
+                <div class="section__title-block">
+                    <span class="section__title-block-line section__title-block-linetl"></span>
+                    <span class="section__title-block-line section__title-block-linebl"></span>
+                    <span class="section__title-block-icon"></span>
+                    <span class="section__title-block-line section__title-block-linetr"></span>
+                    <span class="section__title-block-line section__title-block-linebr"></span>
+                </div>
+            </div>
+            <form class="feedback__form" method="post" id="feedback__form">
+                <div class="feedback__form-group">
+                    <label>Ваше имя:</label>
+                    <input type="text" name="name" placeholder="Ваше имя">
+                </div>
+                <div class="feedback__form-group">
+                    <label>Ваш номер телефона:</label>
+                    <input type="phone" name="phone" data-mask="+7 999 999-99-99" placeholder="Ваш номер телефона">
+                </div>
+                <label class="feedback__checkbox"><input type="checkbox" name="feedback__modal-check" value="1" >Я согласен <a href="Soglasie_na_obrabotku_pdn_rtrs.pdf" target="_blank">на обработку своих персональных данных</a></label>
+                <input type="submit" value="Отправить">
+            </form>
+        </section>
+        <footer>
+           <div class="footer__top">
+               <h2 class="footer__top-title">Официальный представитель в Иркутске</h2>
+               <div class="footer__top-address">
+                <address class="footer__top-address">Адрес: г.Иркутск, ул. Фурье, д. 7А (первый этаж)</address>
+               <a href="#" class="footer__top-tel">Телефон: +7 (3952) 40-46-36</a>
+               </div>
+               <div class="footer__top-logo">
+                   <a href="#">
+                       <img src="img\topsite__logo.png">
+                   </a>
+               </div>
+           </div>
+
+        </footer>
+    </div>
+
+<!---- Modal equipment---->
+    <form class="equipment__modal" id="equipment__modal">
+        <h3>Ваш товар добавлен в корзину</h3>
+        <span class="equipment__modal-img"></span>
+        <span class="equipment__modal-value"></span>
+        <div class="equipment__modal-group">
+            <button class="equipment__modal-cont">Продолжить покупки</button>
+            <button class="equipment__modal-go">Перейти в корзину</button>
+        </div>
+    </form>
+<!---- Header feedback---->
+   <div id="header__modal-wrap">
+       <form class="header__modal" id="header__modal">
+            <h3>Заказать звонок</h3>
+            <div class="input__group">
+                <input type="text" name="name" placeholder="Ваше имя">
+                <input type="phone" name="phone" data-mask="+7 999 999-99-99" placeholder="Ваш номер телефона">
+                <label><input type="checkbox" name="header__modal-check" value="1" >Я согласен <a href="Soglasie_na_obrabotku_pdn_rtrs.pdf">на обработку своих персональных данных</a></label>
+                <input type="submit" value="Отправить">
+            </div>
+        </form>
+        <div class="result">
+          <p>Спасибо! Ваше сообщение успешно отправлено!</p>
+          <div class="result__close">Ok</div>
+        </div>
+   </div>
+
+<!-- Feedback modal-->
+<a data-fancybox="" data-src="#feedback__modal" class="feedback__modal-btn" href="javascript://"></a>
+<div class="feedback__modal" id="feedback__modal">
+    <p class="feedback__modal-text">Ваше сообщение успешно отправлено!</p>
+    <a href="" class="feedback__modal-close">Ок</a>
+</div>
+
+<a data-fancybox="" data-src="#cart__modal" class="cart__modal-btn" href="javascript://"></a>
+<div class="cart__modal" id="cart__modal">
+    <p class="cart__modal-text">Ваш заказ принят в обработку!</p>
+    <a href="" class="cart__modal-close">Ок</a>
+</div>
+
+    <!--<div class="cart__modal" id="cart__modal">
+        <div class="jqcart-layout">
+            <div class="jqcart-checkout">
+                <h3 class="jqcart-cart-title">Корзина</h3>
+                <div class="jqcart-table-wrapper">
+                    <div class="jqcart-manage-order">
+                        <div class="jqcart-thead">
+                            <div>Фотография</div>
+                            <div>Нименование</div>
+                            <div>Цена</div>
+                            <div>Кол-во</div>
+                            <div>Сумма</div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="jqcart-subtotal">
+                    Итого: <strong>1890</strong> руб.
+                </div>
+                <p class="jqcart-cart-title">Контактная информация</p>
+                <form class="jqcart-orderform">
+                    <div class="form__group">
+                        <p><label>ФИО:</label><input type="text" name="user_name"></p>
+                        <p><label>Телефон:</label><input type="text" name="user_phone"></p>
+                        <p><label>Email:</label><input type="text" name="user_mail"></p>
+                        <p><label>Адрес:</label><input type="text" name="user_address"></p>
+                    </div>
+                    <p class="form__send"><input type="submit" value="Отправить заказ"><input type="reset" value="Вернуться к покупкам"></p>
+                </form>
+            </div>
+        </div>
+    </div>--->
+<script src="js\jquery-3.1.1.min.js"></script>
+<script src="js\owl.carousel.min.js"></script>
+<script src="libs\MixitUp\src\jquery.mixitup.js"></script>
+<script src="js\jquery.fancybox.min.js"></script>
+<script src="js\isotope.js"></script>
+<script src="js\slick.min.js"></script>
+<script src="js\inputMask.js"></script>
+<script src="js\fakeLoader.min.js"></script>
+<script src="js\noframework.waypoints.min.js"></script>
+<script src="js\jcart.js?4.10.2017_14:12"></script>
+<script src="js\form.js?4.10.2017_14:12"></script>
+<script src="js\main.js?4.10.2017_14:12"></script>
+     <script>
+        $(window).on("load",function(){
+//                setTimeout(function(){
+            $('#preloader').fadeOut(1000, function(){
+                $("body").removeClass("body__lock-w");
+            });
+             $.jqCart('clearCart');
+         });
+    </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-98866788-3', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <!-- Rating@Mail.ru counter -->
+    <script type="text/javascript">
+        var _tmr = window._tmr || (window._tmr = []);
+        _tmr.push({id: "2929066", type: "pageView", start: (new Date()).getTime()});
+        (function (d, w, id) {
+        if (d.getElementById(id)) return;
+        var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+        ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+        var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+        if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+        })(document, window, "topmailru-code");
+    </script><noscript><div>
+    <img src="//top-fwz1.mail.ru/counter?id=2929066;js=na" style="border:0;position:absolute;left:-9999px;" alt="">
+    </div></noscript>
+    <!-- //Rating@Mail.ru counter -->
+</body>
+</html>
