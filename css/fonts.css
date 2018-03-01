@@ -1,0 +1,23 @@
+/* Web fonts*/
+
+/* Gotham Medium*/
+@font-face {
+    font-family: 'GothamMedium';
+    src: url('fonts/GothamMedium/GothamMedium.eot');
+    src: url('fonts/GothamMedium/GothamMedium.eot') format('embedded-opentype'),
+         url('fonts/GothamMedium/GothamMedium.woff2') format('woff2'),
+         url('fonts/GothamMedium/GothamMedium.woff') format('woff'),
+         url('fonts/GothamMedium/GothamMedium.ttf') format('truetype'),
+         url('fonts/GothamMedium/GothamMedium.svg#GothamMedium') format('svg');
+}
+
+/* GothamBookRegular*/
+
+@font-face {
+    font-family: 'GothamBookRegular';
+    src: url('fonts/GothamBookRegular/GothamBookRegular.woff2') format('woff2'),
+         url('fonts/GothamBookRegular/GothamBookRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

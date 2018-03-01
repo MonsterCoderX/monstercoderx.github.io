@@ -1,0 +1,942 @@
+<!DOCUMENT html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Project Test</title>
+        <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="css/jquery.formstyler.css">
+        <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+        <link rel='stylesheet' href="css/style.css">
+        <link rel='stylesheet' href="css/media.css">
+    </head>
+    <body>
+      <div class="preloader">
+          <div class="cssload-loader">
+              <div class="cssload-inner cssload-one"></div>
+              <div class="cssload-inner cssload-two"></div>
+              <div class="cssload-inner cssload-three"></div>
+          </div>
+      </div>
+       <!------- Wrapper---------->
+        <div id="wrapper">
+    <!----------- Header --------------->
+           <header class="header">
+                <div class="mobile-menu">
+                    <ul class="mobile-menu__list">
+                        <li class="mobile-menu__item">
+                            <a href="#" class="mobile-menu__link">
+                                <span class="mobile-menu__line mobile-menu__line--green"></span>
+                                <span class="mobile-menu__link-text">
+                                    Reality
+                                </span>
+                            </a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#" class="mobile-menu__link">
+                                <span class="mobile-menu__line mobile-menu__line--green"></span>
+                                <span class="mobile-menu__link-text">
+                                    Living
+                                </span>
+                            </a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#" class="mobile-menu__link">
+                                <span class="mobile-menu__line mobile-menu__line--green"></span>
+                                <span class="mobile-menu__link-text">
+                                   Education
+                                </span>
+                            </a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#" class="mobile-menu__link">
+                                <span class="mobile-menu__line mobile-menu__line--green"></span>
+                                <span class="mobile-menu__link-text">
+                                   Entertainment
+                                </span>
+                            </a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#" class="mobile-menu__link">
+                                <span class="mobile-menu__line mobile-menu__line--green"></span>
+                                <span class="mobile-menu__link-text">
+                                   Mobility
+                                </span>
+                            </a>
+                        </li>
+                    </ul>    
+                </div>
+                <div class="header-top">
+                    <div class="container">
+                        <a href="#" class="header-top__logo">
+                            <img src="img/header__logo.png" alt="logo">
+                        </a>
+                        <nav class="header-top__nav">
+                            <div class="mobile-menu__btn">
+                                <span class="mobile-menu__btn-top"></span>
+                                <span class="mobile-menu__btn-center"></span>    
+                                <span class="mobile-menu__btn-bottom"></span>        
+                            </div>
+                            <ul class="header-top__list">
+                                <li class="header-top__item"><a href="#" class="header-top__item-link">Reality</a></li>
+                                <li class="header-top__item"><a href="#" class="header-top__item-link">Living</a></li>
+                                <li class="header-top__item"><a href="#" class="header-top__item-link">Education</a></li>
+                                <li class="header-top__item"><a href="#" class="header-top__item-link">Entertainment</a></li>
+                                <li class="header-top__item"><a href="#" class="header-top__item-link">Mobility</a></li>
+                            </ul>
+                        </nav>
+                        <a href="#" class="header-top__search">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </a>
+                        <a data-fancybox data-src="#modal-login" href="javascript://" class="header-top__login">
+                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                            <span>Login</span>
+                        </a>  
+                    </div>
+                </div>
+                <div class="header-offer">
+                     <div class="header-offer__wrap">
+                         <h1 class="header-offer__title">What are you looking for?</h1>
+                         <form class="header-offer__form">
+                             <div class="header-offer__form-top">
+                                 <select id="header-offer__form-country" class="header-offer__form-country">
+                                     <option value="1">Дубаи</option>
+                                     <option value="2">Египет</option>
+                                     <option value="3">Турция</option>
+                                 </select>
+                                 <select id="header-offer__form-education" class="header-offer__form-country">
+                                     <option value="1">Дубаи</option>
+                                     <option value="2">Египет</option>
+                                     <option value="3">Турция</option>
+                                 </select>
+                             </div> 
+                             <div class="header-offer__form-bottom">
+                                 <input type="text" class=" input header-offer__form-text" name="header-offer__form-text" placeholder="Keyword, name, date, ...">
+                             </div>  
+                             <input type="submit" value="Найти" class="header-offer__form-btn" > 
+                         </form>
+                     </div>  
+                </div>
+           </header>
+<!------------- End Header -------------->
+           <main>
+<!------------------ Filter -------------------->
+               <div class="filter">
+                   <div class="container">
+                       <div class="filter-left">
+                            <ul class="filter-left__list">
+                               <li class="filter-left__item post__filter filter-left__item--active" data-filter="all">All</li>
+                                <li class="filter-left__item post__filter" data-filter=".rec">Recommended</li>
+                                <li class="filter-left__item post__filter" data-filter=".lat">Latest</li>
+                                <li class="filter-left__item post__filter"
+                                   data-filter=".highlights"> Highlights</li>
+                            </ul>
+                        </div> 
+                        <div class="filter-center filter-center--hidden">
+                            <select class="filter-center__select">
+                                <option value="0">Все</option>
+                                <option value="1">Дубаи</option>
+                                <option value="2">Египет</option>
+                                <option value="3">Турция</option>
+                            </select>
+                            <ul class="filter-center__list">
+                                <li class="filter-center__item post__filter filter-left__item--all" data-filter="all">Все</li>
+                                <li class="filter-center__item post__filter filter-left__item--dubai" data-filter=".rec">Дубаи</li>
+                                <li class="filter-center__item post__filter filter-left__item--egypt" data-filter=".lat">Египет</li>
+                                <li class="filter-center__item post__filter filter-left__item--turkey"
+                                   data-filter=".highlights"> Турция</li>
+                            </ul>
+                            <a href="#" class="filter-center__hidemap filter-center__hidemap--active">
+                                <span class="filter-center__hidemap-text">Hide map</span>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </a>
+                        </div> 
+                        <div class="filter-right filter-right--hidden">
+                            <span class="filter-right__text">Filter:</span>
+                            <ul class="filter-right__list">
+                                <li class="filter-right__item" data-filter=".house"><i class="fa fa-home" aria-hidden="true"></i></li>
+                                <li class="filter-right__item" data-filter=".female"><i class="fa fa-female" aria-hidden="true"></i></li>
+                                <li class="filter-right__item" data-filter=".cap"><i class="fa fa-graduation-cap" aria-hidden="true"></i></li>
+                                <li class="filter-right__item" data-filter=".music"><i class="fa fa-music" aria-hidden="true"></i></li>
+                                <li class="filter-right__item" data-filter=".bus"><i class="fa fa-bus" aria-hidden="true"></i></li>
+                            </ul>
+                        </div> 
+                        <div class="mobile-filter__wrap">
+                            <a href="#" class="mobile-filter__btn"><i class="fa fa-filter" aria-hidden="true"></i></a>
+                            <div class="mobile-filter__content">
+                               <div class="mobile-filter__content-wrap">
+                                   <div class="filter-center">
+                                    <select class="filter-center__select">
+                                        <option value="0">Все</option>
+                                        <option value="1">Дубаи</option>
+                                        <option value="2">Египет</option>
+                                        <option value="3">Турция</option>
+                                    </select>
+                                    <ul class="filter-center__list">
+                                        <li class="filter-center__item post__filter filter-left__item--all" data-filter="all">Все</li>
+                                        <li class="filter-center__item post__filter filter-left__item--dubai" data-filter=".rec">Дубаи</li>
+                                        <li class="filter-center__item post__filter filter-left__item--egypt" data-filter=".lat">Египет</li>
+                                        <li class="filter-center__item post__filter filter-left__item--turkey"
+                                           data-filter=".highlights"> Турция</li>
+                                    </ul>
+                                    <a href="#" class="filter-center__hidemap filter-center__hidemap--active">
+                                        <span class="filter-center__hidemap-text">Hide map</span>
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="filter-right">
+                                    <span class="filter-right__text">Filter:</span>
+                                    <ul class="filter-right__list">
+                                        <li class="filter-right__item" data-filter=".house"><i class="fa fa-home" aria-hidden="true"></i></li>
+                                        <li class="filter-right__item" data-filter=".female"><i class="fa fa-female" aria-hidden="true"></i></li>
+                                        <li class="filter-right__item" data-filter=".cap"><i class="fa fa-graduation-cap" aria-hidden="true"></i></li>
+                                        <li class="filter-right__item" data-filter=".music"><i class="fa fa-music" aria-hidden="true"></i></li>
+                                        <li class="filter-right__item" data-filter=".bus"><i class="fa fa-bus" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>     
+                               </div>   
+                            </div>  
+                        </div>    
+                   </div>
+               </div>
+<!------------------ End Filter -------------------->
+<!------------- Post ----------------------->
+               <div class="post">
+                   <div class="container">
+                       <ul class="post__list" id="container__post">
+                           <li class="mix rec house post__item post__item--small" data-order="1">
+                               <div class="post__item-wrap">
+                                   <span class="post__item-price">$2.990</span>
+                                    <div class="post__item-img post__item-img--house post__item-img--small">
+                                        <span class="post__item-icon post__item-icon--green post__item-icon--small">
+                                            <i class="fa fa-home" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="post__img-wrap">
+                                            <div class="post__img-overlay post__img-overlay--house">
+                                                <a href="#" class="post-overlay__search"><i class="fa fa-search" aria-hidden="true"></i>Show more</a>  
+                                                <div class="post-overlay__text">
+                                                    <ul class="post-overlay__star">
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                    </ul> 
+                                                    <a href="#" class="post-overlay__comments">
+                                                        <i class="fa fa-comments-o" aria-hidden="true"></i> 
+                                                    </a>  
+                                                </div>     
+                                            </div>
+                                        </div>
+                                    </div>  
+                                    <div class="post__item-text">
+                                        <h3 class="post__item-title">2 bedroom house for rent in Dubai</h3>
+                                        <span class="post__item-name post__item-name--green">Vision Agency</span>
+                                        <div class="post__item-rating">
+                                            <div class="post__item-star">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </div>
+                                            <span class="post__item-counter">
+                                                (200)
+                                            </span>
+                                        </div>
+                                    </div>     
+                               </div>
+                           </li>
+                           <li class="mix music lat post__item post__item--small" data-order="2">
+                               <div class="post__item-wrap">
+                                   <div class="post__item-img post__item-img--music post__item-img--small">
+                                        <span class="post__item-icon post__item-icon--orange post__item-icon--small">
+                                            <i class="fa fa-music" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="post__img-wrap">
+                                            <div class="post__img-overlay post__img-overlay--music">
+                                                <a href="#" class="post-overlay__search"><i class="fa fa-search" aria-hidden="true"></i>Show more</a>  
+                                                <div class="post-overlay__text">
+                                                    <ul class="post-overlay__star">
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                    </ul> 
+                                                    <a href="#" class="post-overlay__comments">
+                                                        <i class="fa fa-comments-o" aria-hidden="true"></i> 
+                                                    </a>  
+                                                </div>     
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post__item-text">
+                                        <h3 class="post__item-title">Beach party festival 2014</h3>
+                                        <span class="post__item-name post__item-name--orange">Long beach</span>
+                                        <div class="post__item-rating">
+                                            <div class="post__item-star">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </div>
+                                            <span class="post__item-counter">
+                                                (300)
+                                            </span>
+                                        </div>
+                                    </div>     
+                               </div>  
+                           </li>
+                           <li class="mix bus rec house post__item post__item--small" data-order="3">
+                               <div class="post__item-wrap">
+                                   <div class="post__item-img post__item-img--bus post__item-img--small">
+                                        <span class="post__item-icon post__item-icon--purp post__item-icon--small">
+                                            <i class="fa fa-bus" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="post__img-wrap">
+                                            <div class="post__img-overlay post__img-overlay--bus">
+                                                <a href="#" class="post-overlay__search"><i class="fa fa-search" aria-hidden="true"></i>Show more</a>  
+                                                <div class="post-overlay__text">
+                                                    <ul class="post-overlay__star">
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                    </ul> 
+                                                    <a href="#" class="post-overlay__comments">
+                                                        <i class="fa fa-comments-o" aria-hidden="true"></i> 
+                                                    </a>  
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post__item-text">
+                                        <h3 class="post__item-title">Aliquam quis pulvinar purus</h3>
+                                        <span class="post__item-name post__item-name--purp">Bus Trans</span>
+                                        <div class="post__item-rating">
+                                            <div class="post__item-star">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </div>
+                                            <span class="post__item-counter">
+                                                (900)
+                                            </span>
+                                        </div>
+                                    </div>     
+                               </div>  
+                           </li>
+                           <li class="mix lat house post__item post__item--small" data-order="4">
+                               <div class="post__item-wrap">
+                                    <span class="post__item-price">$2.990</span>
+                                    <div class="post__item-img post__item-img--house post__item-img--small">
+                                        <span class="post__item-icon post__item-icon--green post__item-icon--small">
+                                            <i class="fa fa-home" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="post__img-wrap">
+                                            <div class="post__img-overlay post__img-overlay--house">
+                                                <a href="#" class="post-overlay__search"><i class="fa fa-search" aria-hidden="true"></i>Show more</a>  
+                                                <div class="post-overlay__text">
+                                                    <ul class="post-overlay__star">
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                    </ul> 
+                                                    <a href="#" class="post-overlay__comments">
+                                                        <i class="fa fa-comments-o" aria-hidden="true"></i> 
+                                                    </a>  
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>  
+                                    <div class="post__item-text">
+                                        <h3 class="post__item-title">4 bedroom house for rent in Dubai</h3>
+                                        <span class="post__item-name post__item-name--green">Reality Agency</span>
+                                        <div class="post__item-rating">
+                                            <div class="post__item-star">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </div>
+                                            <span class="post__item-counter">
+                                                (500)
+                                            </span>
+                                        </div>
+                                    </div>   
+                               </div> 
+                           </li>
+                           <li class="mix highlights house post__item post__item--medium" data-order="7">
+                                <div class="post__item-wrap">
+                                    <div class="post__item-img post__item-img--medium post__item-img--house-medium">
+                                        <div class="post__img-wrap">
+                                            <div class="post__img-overlay post__img-overlay--house">
+                                                <a href="#" class="post-overlay__search"><i class="fa fa-search" aria-hidden="true"></i>Show more</a>  
+                                                <div class="post-overlay__text">
+                                                    <ul class="post-overlay__star">
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                    </ul> 
+                                                    <a href="#" class="post-overlay__comments">
+                                                        <i class="fa fa-comments-o" aria-hidden="true"></i> 
+                                                    </a>  
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <span class="post__item-icon post__item-icon--green post__item-icon--medium">
+                                            <i class="fa fa-home" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="post__rating-medium">
+                                            <span class="post__rating-name">Vision agency</span>
+                                            <div class="post__rating-star post__rating-star--small">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </div>
+                                            <span class="post__rating-counter">
+                                                (500)
+                                            </span>
+                                         </div>    
+                                    </div>
+                                   <div class="post__item-medium-text">
+                                       <div class="post__item-medium-rating">
+                                           <div class="post__item-medium-star post__item-medium-star--big">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </div>    
+                                       </div>  
+                                       <div class="post__item-medium-comments">
+                                           <span class="post__item-medium-avatar post__item-medium-avatar--house"></span>
+                                           <div class="post__item-medium-info">
+                                               <h3 class="post__item-medium-title">Lucy-P</h3>
+                                               <p class="post__item-medium-parg">Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.”<a href="#" class="post__item-medium-link">...read more</a></p>
+                                           </div>
+                                       </div>  
+                                   </div>   
+                                </div>    
+                           </li>
+                           <li class="mix music highlights post__item post__item--medium" data-order="8">
+                                <div class="post__item-wrap">
+                                    <div class="post__item-img post__item-img--medium post__item-img--club-medium">
+                                        <div class="post__img-wrap">
+                                            <div class="post__img-overlay post__img-overlay--music">
+                                                <a href="#" class="post-overlay__search"><i class="fa fa-search" aria-hidden="true"></i>Show more</a>  
+                                                <div class="post-overlay__text">
+                                                    <ul class="post-overlay__star">
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                    </ul> 
+                                                    <a href="#" class="post-overlay__comments">
+                                                        <i class="fa fa-comments-o" aria-hidden="true"></i> 
+                                                    </a>  
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <span class="post__item-icon post__item-icon--orange post__item-icon--medium">
+                                            <i class="fa fa-music" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="post__rating-medium">
+                                            <span class="post__rating-name">Vision agency</span>
+                                            <div class="post__rating-star post__rating-star--small">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </div>
+                                            <span class="post__rating-counter">
+                                                (500)
+                                            </span>
+                                         </div>    
+                                    </div>
+                                   <div class="post__item-medium-text">
+                                       <div class="post__item-medium-rating">
+                                           <div class="post__item-medium-star post__item-medium-star--big">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </div>    
+                                       </div>  
+                                       <div class="post__item-medium-comments">
+                                           <span class="post__item-medium-avatar post__item-medium-avatar--club"></span>
+                                           <div class="post__item-medium-info">
+                                               <h3 class="post__item-medium-title">Peter145</h3>
+                                               <p class="post__item-medium-parg">Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.”<a href="#" class="post__item-medium-link">...read more</a></p>
+                                           </div>
+                                       </div>  
+                                   </div>    
+                                </div>   
+                           </li>
+                           <li class="mix female highlights post__item post__item--medium" data-order="9">
+                                <div class="post__item-wrap">
+                                    <div class="post__item-img post__item-img--medium post__item-img--club-medium">
+                                        <div class="post__img-wrap">
+                                            <div class="post__img-overlay post__img-overlay--music">
+                                                <a href="#" class="post-overlay__search"><i class="fa fa-search" aria-hidden="true"></i>Show more</a>  
+                                                <div class="post-overlay__text">
+                                                    <ul class="post-overlay__star">
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                    </ul> 
+                                                    <a href="#" class="post-overlay__comments">
+                                                        <i class="fa fa-comments-o" aria-hidden="true"></i> 
+                                                    </a>  
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <span class="post__item-icon post__item-icon--orange post__item-icon--medium">
+                                            <i class="fa fa-music" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="post__rating-medium">
+                                            <span class="post__rating-name">Vision agency</span>
+                                            <div class="post__rating-star post__rating-star--small">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </div>
+                                            <span class="post__rating-counter">
+                                                (500)
+                                            </span>
+                                         </div>    
+                                    </div>
+                                   <div class="post__item-medium-text">
+                                       <div class="post__item-medium-rating">
+                                           <div class="post__item-medium-star post__item-medium-star--big">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </div>    
+                                       </div>  
+                                       <div class="post__item-medium-comments">
+                                           <span class="post__item-medium-avatar post__item-medium-avatar--club"></span>
+                                           <div class="post__item-medium-info">
+                                               <h3 class="post__item-medium-title">Peter145</h3>
+                                               <p class="post__item-medium-parg">Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.”<a href="#" class="post__item-medium-link">...read more</a></p>
+                                           </div>
+                                       </div>  
+                                   </div>    
+                                </div>   
+                           </li>
+                           <li class="mix rec cap post__item post__item--small" data-order="5">
+                                <div class="post__item-wrap">
+                                    <span class="post__item-price">$2.990</span>
+                                    <div class="post__item-img post__item-img--house post__item-img--small">
+                                        <span class="post__item-icon post__item-icon--green post__item-icon--small">
+                                            <i class="fa fa-home" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="post__img-wrap">
+                                            <div class="post__img-overlay post__img-overlay--house">
+                                                <a href="#" class="post-overlay__search"><i class="fa fa-search" aria-hidden="true"></i>Show more</a>  
+                                                <div class="post-overlay__text">
+                                                    <ul class="post-overlay__star">
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                    </ul> 
+                                                    <a href="#" class="post-overlay__comments">
+                                                        <i class="fa fa-comments-o" aria-hidden="true"></i> 
+                                                    </a>  
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>  
+                                    <div class="post__item-text">
+                                        <h3 class="post__item-title">2 bedroom house for rent in Dubai</h3>
+                                        <span class="post__item-name post__item-name--green">Vision Agency</span>
+                                        <div class="post__item-rating">
+                                            <div class="post__item-star">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </div>
+                                            <span class="post__item-counter">
+                                                (200)
+                                            </span>
+                                        </div>
+                                    </div>   
+                                </div> 
+                           </li>
+                           <li class="mix music lat post__item post__item--small" data-order="6">
+                               <div class="post__item-wrap">
+                                   <div class="post__item-img post__item-img--music post__item-img--small">
+                                        <span class="post__item-icon post__item-icon--orange post__item-icon--small">
+                                            <i class="fa fa-music" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="post__img-wrap">
+                                            <div class="post__img-overlay post__img-overlay--music">
+                                                <a href="#" class="post-overlay__search"><i class="fa fa-search" aria-hidden="true"></i>Show more</a>  
+                                                <div class="post-overlay__text">
+                                                    <ul class="post-overlay__star">
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li class="post-overlay__star-item">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </li>
+                                                    </ul> 
+                                                    <a href="#" class="post-overlay__comments">
+                                                        <i class="fa fa-comments-o" aria-hidden="true"></i> 
+                                                    </a>  
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post__item-text">
+                                        <h3 class="post__item-title">Beach party festival 2014</h3>
+                                        <span class="post__item-name post__item-name--orange">Long beach</span>
+                                        <div class="post__item-rating">
+                                            <div class="post__item-star">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </div>
+                                            <span class="post__item-counter">
+                                                (300)
+                                            </span>
+                                        </div>
+                                    </div>     
+                               </div>  
+                           </li>    
+                       </ul>
+                       <div class="post__load">
+                            <a href="#" class="post__load-link">Load more</a>
+                            <i class="fa fa-long-arrow-right post__load-icon" aria-hidden="true"></i>
+                       </div>      
+                   </div>  
+               </div>
+<!------------- End Post ----------------------->
+<!--------- Offer -------------->
+               <div class="offer">
+                  <div class="container">
+                      <div class="heading-top">
+                           <h2 class="heading-top__title">What can DuHoot offer to you?</h2>   
+                           <p class="heading-top__parg">Etiam cursus ipsum quis enim faucibus</p> 
+                       </div>
+                       <div class="offer-tab">
+                           <div class="offer-tab__wrapper">
+                               <ul class="offer-tab__list">
+                                   <li class="offer-tab__item">
+                                        <a class="offer-tab__link offer-tab__link" href="#Realty1">
+                                            <i class="fa fa-home" aria-hidden="true"></i>
+                                        </a>
+                                   </li>
+                                   <li class="offer-tab__item">
+                                        <a class="offer-tab__link" href="#Realty2">
+                                            <i class="fa fa-female" aria-hidden="true"></i>     
+                                        </a>
+                                   </li>
+                                   <li class="offer-tab__item">
+                                      <a class="offer-tab__link" href="#Realty3">
+                                          <i class="fa fa-graduation-cap" aria-hidden="true"></i>    
+                                      </a>
+                                   </li>
+                                   <li class="offer-tab__item">
+                                      <a class="offer-tab__link" href="#Realty4">
+                                          <i class="fa fa-music" aria-hidden="true"></i>    
+                                      </a>
+                                   </li>
+                                   <li class="offer-tab__item">
+                                      <a class="offer-tab__link" href="#Realty5">
+                                          <i class="fa fa-bus" aria-hidden="true"></i>    
+                                      </a>
+                                   </li>
+                               </ul>
+                               <div class="offer-tab__content">
+                                    <div class="offer-tab__content-list offer-tab__content-list--active" id="Realty1">
+                                        <h3 class="offer-tab__content-title">Reality1</h3>
+                                        <ul class="offer-tab__content-wrap">
+                                            <li class="offer-tab__content-item">
+                                               <span class="offer-tab__content-icon offer-tab__content-icon--green"><i class="fa fa-bolt" aria-hidden="true"></i></span>
+                                               <p class="offer-tab__content-text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+                                           </li>
+                                           <li class="offer-tab__content-item">
+                                               <span class="offer-tab__content-icon offer-tab__content-icon--green"><i class="fa fa-envira" aria-hidden="true"></i></span>
+                                               <p class="offer-tab__content-text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+                                           </li>    
+                                        </ul>
+                                   </div>
+                                   <div class="offer-tab__content-list " id="Realty2">
+                                        <h3 class="offer-tab__content-title">Reality2</h3>
+                                        <ul class="offer-tab__content-wrap">
+                                            <li class="offer-tab__content-item">
+                                               <span class="offer-tab__content-icon offer-tab__content-icon--green"><i class="fa fa-bolt" aria-hidden="true"></i></span>
+                                               <p class="offer-tab__content-text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+                                           </li>
+                                           <li class="offer-tab__content-item">
+                                               <span class="offer-tab__content-icon offer-tab__content-icon--green"><i class="fa fa-envira" aria-hidden="true"></i></span>
+                                               <p class="offer-tab__content-text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+                                           </li>    
+                                        </ul>
+                                   </div>
+                                    <div class="offer-tab__content-list" id="Realty3">
+                                        <h3 class="offer-tab__content-title">Reality3</h3>
+                                        <ul class="offer-tab__content-wrap">
+                                            <li class="offer-tab__content-item">
+                                               <span class="offer-tab__content-icon offer-tab__content-icon--green"><i class="fa fa-bolt" aria-hidden="true"></i></span>
+                                               <p class="offer-tab__content-text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+                                           </li>
+                                           <li class="offer-tab__content-item">
+                                               <span class="offer-tab__content-icon offer-tab__content-icon--green"><i class="fa fa-envira" aria-hidden="true"></i></span>
+                                               <p class="offer-tab__content-text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+                                           </li>    
+                                        </ul>
+                                   </div>
+                                    <div class="offer-tab__content-list" id="Realty4">
+                                        <h3 class="offer-tab__content-title">Reality4</h3>
+                                        <ul class="offer-tab__content-wrap">
+                                            <li class="offer-tab__content-item">
+                                               <span class="offer-tab__content-icon offer-tab__content-icon--green"><i class="fa fa-bolt" aria-hidden="true"></i></span>
+                                               <p class="offer-tab__content-text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+                                           </li>
+                                           <li class="offer-tab__content-item">
+                                               <span class="offer-tab__content-icon offer-tab__content-icon--green"><i class="fa fa-envira" aria-hidden="true"></i></span>
+                                               <p class="offer-tab__content-text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+                                           </li>    
+                                        </ul>
+                                   </div>
+                                    <div class="offer-tab__content-list" id="Realty5">
+                                        <h3 class="offer-tab__content-title">Reality5</h3>
+                                        <ul class="offer-tab__content-wrap">
+                                            <li class="offer-tab__content-item">
+                                               <span class="offer-tab__content-icon offer-tab__content-icon--green"><i class="fa fa-bolt" aria-hidden="true"></i></span>
+                                               <p class="offer-tab__content-text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+                                           </li>
+                                           <li class="offer-tab__content-item">
+                                               <span class="offer-tab__content-icon offer-tab__content-icon--green"><i class="fa fa-envira" aria-hidden="true"></i></span>
+                                               <p class="offer-tab__content-text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+                                           </li>    
+                                        </ul>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>    
+                  </div>
+               </div>
+<!--------- End Offer -------------->
+           </main>
+<!------ Footer ------------->
+            <footer class="footer">
+                <div class="container">
+                    <h2 class="footer__title">Subscribe to our newslette</h2>
+                    <form class="footer__form">
+                        <i class="fa fa-envelope-o footer__form-icon" aria-hidden="true"></i>
+                        <input type="text" class="input footer__form-input" name="footer__form-input" placeholder="your@email.com">
+                        <input type="submit" class="footer__form-btn" value="Subscribe">   
+                    </form>
+                    <div class="footer__bottom">
+                       <div class="footer__bottom-block">
+                           <h3 class="footer__bottom-title">Ipsum quis</h3>
+                           <ul class="footer__bottom-list">
+                               <li class="footer__bottom-item">
+                                   <a href="#" class="footer__bottom-link">Aliquam quis</a>
+                               </li>
+                               <li class="footer__bottom-item">
+                                   <a href="#" class="footer__bottom-link">Pulvinar purus</a>
+                                </li>
+                                <li class="footer__bottom-item">
+                                    <a href="#" class="footer__bottom-link">Etiam cursus</a>   
+                                </li>
+                                <li class="footer__bottom-item">
+                                   <a href="#" class="footer__bottom-link">Ipsum quis</a></li>
+                                <li class="footer__bottom-item">
+                                   <a href="#" class="footer__bottom-link">Enim faucibus</a>
+                                </li>
+                            </ul>
+                       </div>
+                       <div class="footer__bottom-block">
+                           <h3 class="footer__bottom-title">Ipsum quis</h3>
+                           <ul class="footer__bottom-list">
+                               <li class="footer__bottom-item">
+                                   <a href="#" class="footer__bottom-link">Aliquam quis</a>
+                               </li>
+                               <li class="footer__bottom-item">
+                                   <a href="#" class="footer__bottom-link">Pulvinar purus</a>
+                                </li>
+                                <li class="footer__bottom-item">
+                                    <a href="#" class="footer__bottom-link">Etiam cursus</a>   
+                                </li>
+                                <li class="footer__bottom-item">
+                                   <a href="#" class="footer__bottom-link">Ipsum quis</a></li>
+                                <li class="footer__bottom-item">
+                                   <a href="#" class="footer__bottom-link">Enim faucibus</a>
+                                </li>
+                            </ul>
+                       </div>
+                       <div class="footer__bottom-block">
+                           <h3 class="footer__bottom-title">Follow us</h3>
+                           <ul class="footer__social-list">
+                               <li class="footer__social-item">
+                                       <a href="#" class="footer__social-link">
+                                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                                       </a>
+                                   </li>
+                               <li class="footer__social-item">
+                                       <a href="#" class="footer__social-link">
+                                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                       </a>
+                                   </li>
+                               <li class="footer__social-item">
+                                       <a href="#" class="footer__social-link">
+                                            <i class="fa fa-google-plus" aria-hidden="true"></i>   
+                                       </a>
+                                   </li>
+                               <li class="footer__social-item">
+                                       <a href="#" class="footer__social-link">
+                                           <i class="fa fa-youtube" aria-hidden="true"></i>
+                                       </a>
+                                   </li>
+                           </ul>
+                           <span class="footer__bottom-copyright">Copyright © All Rights reserved</span>
+                       </div>
+                    </div>
+                </div>
+            </footer>
+<!------ End Footer ------------->
+        </div>
+<!------- End Wrapper---------->
+<!--------Modal --------->
+       <div class="modal-login" id="modal-login">
+           <form class="modal-login__form">
+                <h3 class="modal-login__form-title">Войти в аккаунт</h3>
+                <label class="modal-login__form-label" for="modal-login__form-login">Ваш логин/email:</label>
+                <input type="text" name="login" class="modal-login__form-input" id="modal-login__form-login" placeholder="Введите ваш логин">
+                <label class="modal-login__form-label" for="modal-login__form-password">Ваш пароль:</label>
+                <input type="text" name="login" class="modal-login__form-input" id="modal-login__form-password"  placeholder="Введите ваш пароль">
+                <input type="submit" value="Войти" class="modal-login__form-btn" id="modal-login__form-btn" >
+           </form>
+       </div>
+<!-------- End Modal --------->     
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="./libs/mixitup/dist/mixitup.js"></script>
+        <script src="js/jquery.fancybox.min.js"></script>
+        <script src="js/jquery.formstyler.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
