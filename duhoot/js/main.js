@@ -1,4 +1,9 @@
 $(document).ready(function(){
+        var preloader = $(".preloader");
+        setTimeout(function(){
+            preloader.fadeOut();
+        },1000)
+    
     var mixer = mixitup('#container__post');
     
 /* Filter element active */
